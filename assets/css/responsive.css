@@ -1,0 +1,140 @@
+@media only screen and (min-width: 1360px) {
+  .container {
+    max-width: 1210px;
+    width: 100%;
+    padding: 0px 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .banner-section {
+    padding: 80px 0px;
+  }
+  .join-bib-section {
+    padding-bottom: 80px;
+  }
+  .coming-soon-section {
+    padding-bottom: 80px;
+  }
+  .bib-walk-section {
+    padding-bottom: 80px;
+  }
+  .coming-soon-content h2 {
+    font-size: 70px;
+  }
+  .bib-social {
+    max-width: 800px;
+  }
+  .bib-social ul li {
+    width: 20%;
+  }
+  .footer-content {
+    bottom: 5%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .banner-left p {
+    font-size: 24px;
+  }
+  .coming-soon-content h2 {
+    font-size: 60px;
+  }
+  .crypto-cuties-section .crypto-cuties-right p {
+    font-size: 24px;
+  }
+  .crypto-cuties-section .crypto-cuties-right ul li {
+    font-size: 24px;
+  }
+  .bib-walk-text p {
+    font-size: 24px;
+  }
+  .section-title {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner-section {
+    padding: 60px 0px;
+  }
+  .join-bib-section {
+    padding-bottom: 60px;
+  }
+  .coming-soon-section {
+    padding-bottom: 60px;
+  }
+  .bib-walk-section {
+    padding-bottom: 60px;
+  }
+  .bib-walk-section .cloud4 {
+    bottom: -7%;
+  }
+  .banner-left {
+    text-align: center;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    max-width: 370px;
+    margin: auto;
+  }
+  .banner-img {
+    max-width: 400px;
+    margin: auto;
+  }
+  .coming-soon-content {
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .coming-soon-content h2 {
+    font-size: 40px;
+  }
+  .crypto-cuties-section .crypto-cuties-left {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .crypto-cuties-section .crypto-cuties-right {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+  }
+  .crypto-cuties-section .crypto-cuties-right ul {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .bib-walk-img {
+    max-width: 400px;
+    margin: auto;
+  }
+  .bib-walk-text p {
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .footer-social {
+    padding: 0px 30px;
+  }
+  .footer-social .bib-social {
+    margin-top: -10px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .coming-soon-content h2 {
+    font-size: 28px;
+  }
+  .footer-social {
+    padding: 0px 15px;
+  }
+  .footer-social h2 {
+    padding-left: 0px;
+    font-size: 21px;
+    margin-bottom: 10px;
+  }
+  .header-inner .logo {
+    width: 70px;
+  }
+  .header-inner ul li a {
+    font-size: 16px;
+  }
+  .bib-walk-section .cloud4 {
+    bottom: -4%;
+  }
+}

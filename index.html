@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BIB - Home</title>
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
@@ -14,12 +15,21 @@
     <div class="body-continer">
         <!-- header section start -->
         <header class="header-section">
-
+            <div class="container">
+                <div class="header-inner">
+                    <a href="index.html" class="logo"><img src="./assets/images/logo.png" alt="logo"></a>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#CryptoCuties">Crypto Cuties</a></li>
+                        <li><a href="#JoinUs">Join Us</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
         <!-- header section end -->
 
         <!-- Banner section start -->
-        <section class="banner-section">
+        <section class="banner-section" id="Home">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -44,8 +54,9 @@
         <!-- Banner section end -->
 
         <!-- join bib section start -->
-        <section class="join-bib-section">
+        <section class="join-bib-section" id="JoinUs">
             <div class="container">
+                <img src="./assets/images/balls1.png" alt="img" class="shape">
                 <h2 class="section-title uppercase text-center">Join the BIB Family</h2>
                 <div class="bib-social pt-4">
                     <ul>
@@ -72,17 +83,20 @@
         <!-- coming-soon section end -->
 
         <!-- meet section start -->
-        <section class="meet-section">
+        <section class="crypto-cuties-section" id="CryptoCuties">
+            <img src="./assets/images/cloud1.png" alt="shape" class="cloud1">
+            <img src="./assets/images/cloud2.png" alt="shape" class="cloud2">
+            <img src="./assets/images/balls2.png" alt="img" class="shape">
             <div class="container">
                 <h2 class="section-title text-center uppercase">MEET OUR "CRYPTO CUTIES"</h2>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="meet-left">
-                            <img src="./assets/images/meet-img.png" alt="img">
+                        <div class="crypto-cuties-left">
+                            <img src="./assets/images/crypto-cuties-img.png" alt="img">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="meet-right">
+                        <div class="crypto-cuties-right">
                             <p>Smart blockchain ladies who dominated the market with BIB during the Onchain Summer on
                                 Base. Only real ladies wear a bathrobe.</p>
                             <ul>
@@ -100,16 +114,19 @@
 
         <!-- bib walk section start -->
          <section class="bib-walk-section">
+            <img src="./assets/images/cloud3.png" alt="shape" class="cloud3">
+            <img src="./assets/images/cloud4.png" alt="shape" class="cloud4">
+            <img src="./assets/images/balls1.png" alt="img" class="shape">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="bib-walk-text">
-                            <p>A cool bathrobe makes you the playboy of the party. Do you dare to wear it?</p>
-                        </div>
-                    </div>
+                <div class="row flex-row-reverse">
                     <div class="col-md-6">
                         <div class="bib-walk-img">
                             <img src="./assets/images/bib_walk.gif" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bib-walk-text">
+                            <p>A cool bathrobe makes you the playboy of the party. Do you dare to wear it?</p>
                         </div>
                     </div>
                 </div>
