@@ -97,6 +97,7 @@ ul {
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.3s;
+  gap: 5px;
 }
 .header-inner ul li a:hover {
   color: #FFFFFF;
