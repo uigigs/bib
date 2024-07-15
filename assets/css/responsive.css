@@ -9,6 +9,9 @@
   .banner-section {
     padding: 80px 0px;
   }
+  .banner-left h3 {
+    font-size: 40px;
+  }
   .join-bib-section {
     padding-bottom: 80px;
   }
@@ -30,6 +33,17 @@
   .footer-content {
     bottom: 5%;
   }
+  .bib-walk-text {
+    padding-left: 11%;
+    height: 60%;
+    margin-top: 20%;
+  }
+  .bib-walk-text p {
+    max-width: 270px;
+    width: 100%;
+    font-size: 27px;
+    line-height: 130%;
+  }
 }
 @media only screen and (max-width: 992px) {
   .banner-left p {
@@ -50,10 +64,21 @@
   .section-title {
     font-size: 28px;
   }
+  .bib-walk-text p {
+    font-size: 20px;
+    max-width: 200px;
+  }
+  .crypto-cuties-section .crypto-cuties-right ul li .icon {
+    width: 25px;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
   .banner-section {
     padding: 60px 0px;
+  }
+  .banner-left h3 {
+    font-size: 32px;
   }
   .join-bib-section {
     padding-bottom: 60px;
@@ -115,8 +140,24 @@
   .footer-social .bib-social {
     margin-top: -10px;
   }
+  .crypto-cuties-section .crypto-cuties-right ul li {
+    justify-content: center;
+  }
+  .bib-walk-text {
+    padding-left: 0;
+    height: 80%;
+    margin-top: 10%;
+    max-width: 380px;
+  }
+  .bib-walk-text p {
+    margin-top: 0px;
+    transform: translateX(-5%);
+  }
 }
 @media only screen and (max-width: 575px) {
+  .banner-left h3 {
+    font-size: 30px;
+  }
   .coming-soon-content h2 {
     font-size: 28px;
   }

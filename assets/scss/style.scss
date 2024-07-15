@@ -15,6 +15,7 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: normal;
+    text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
 }
 
 .body-continer {
@@ -110,10 +111,17 @@ ul {
     z-index: 1;
 }
 .banner-left{
-    max-width: 525px;
+    max-width: 560px;
     padding-top: 40px;
+    h3{
+        font-size: 50px;
+        line-height: 140%;
+        &.mb-30{
+            margin-bottom: 30px;
+        }
+    }
     p{
-        font-size: 31px;
+        font-size: 28px;
         line-height: 130%;
     }
 }
@@ -128,7 +136,7 @@ ul {
 
 .section-title{
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 40px;
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
@@ -228,15 +236,29 @@ ul {
     .crypto-cuties-right{
         margin-top: 30px;
         p{
-            font-size: 31px;
+            font-size: 32px;
             line-height: 130%;
             max-width: 515px;
         }
         ul{
             margin-top: 30px;
             li{
-                font-size: 31px;
+                font-size: 32px;
                 line-height: 150%;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+                .icon{
+                    // position: absolute;
+                    // top: 0;
+                    // left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 35px;
+                }
             }
         }
     }
@@ -256,7 +278,7 @@ ul {
     }
     .cloud4{
         position: absolute;
-        bottom: -10%;
+        bottom: -12%;
         left: 0px;
         width: 100%;
         z-index: 1;
@@ -273,13 +295,22 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100%;
+    background: url(../images/talk-shape.png);
+    background-position: bottom right;
+    height: 70%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 15%;
+    padding: 40px;
+    padding-left: 13%;
+    text-align: center;
     p{
-        max-width: 380px;
+        max-width: 320px;
         width: 100%;
-        font-size: 24px;
-        font-size: 31px;
+        font-size: 32px;
         line-height: 130%;
+    
     }
 }
 
@@ -314,11 +345,9 @@ ul {
 .footer-social{
     width: 70%;
     padding: 0px 70px;
-    h2{
-        padding-left: 20px;
-    }
     .bib-social{
         margin-left: 0;
         margin-right: auto;
+        margin-top: 50px;
     }
 }
