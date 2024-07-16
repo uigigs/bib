@@ -142,8 +142,9 @@ ul {
     z-index: 1;
 }
 .join-bib-section{
-    background: rgba(65, 80, 174, 0.8);
-    padding: 70px 0px;
+    // background: rgba(65, 80, 174, 0.8);
+    background: linear-gradient(180deg, rgba(65, 80, 174, 0.00) 0%, rgba(65, 80, 174, 0.60) 25%, #4150AE 50%, rgba(65, 80, 174, 0.60) 75%, rgba(65, 80, 174, 0.00) 100%);
+    padding: 120px 0px;
     margin-bottom: 120px;
     .shape{
         position: absolute;
@@ -179,7 +180,7 @@ ul {
 }
 
 .coming-soon-section{
-    padding-bottom: 120px;
+    padding-bottom: 80px;
 }
 .coming-soon-content{
     display: flex;
@@ -200,7 +201,8 @@ ul {
 .crypto-cuties-section{
     padding-bottom: 60px;
     position: relative;
-    background-color: rgb(0, 0, 0, 0.4);
+    // background-color: rgb(0, 0, 0, 0.4);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 25%, rgba(0, 0, 0, 0.40) 75%, rgba(0, 0, 0, 0.00) 100%);
     padding-top: 60px;
     .container{
         z-index: 1;

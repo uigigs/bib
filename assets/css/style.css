@@ -144,8 +144,8 @@ ul {
 }
 
 .join-bib-section {
-  background: rgba(65, 80, 174, 0.8);
-  padding: 70px 0px;
+  background: linear-gradient(180deg, rgba(65, 80, 174, 0) 0%, rgba(65, 80, 174, 0.6) 25%, #4150AE 50%, rgba(65, 80, 174, 0.6) 75%, rgba(65, 80, 174, 0) 100%);
+  padding: 120px 0px;
   margin-bottom: 120px;
 }
 .join-bib-section .shape {
@@ -182,7 +182,7 @@ ul {
 }
 
 .coming-soon-section {
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 }
 
 .coming-soon-content {
@@ -203,7 +203,7 @@ ul {
 .crypto-cuties-section {
   padding-bottom: 60px;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4) 75%, rgba(0, 0, 0, 0) 100%);
   padding-top: 60px;
 }
 .crypto-cuties-section .container {
