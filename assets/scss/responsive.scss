@@ -17,7 +17,8 @@
         }
     }
     .join-bib-section{
-        padding-bottom: 80px;
+        padding: 60px 0px;
+        margin-bottom: 80px;
     }
     .coming-soon-section{
         padding-bottom: 80px;
@@ -42,7 +43,7 @@
         bottom: 5%;
     }
     .bib-walk-text {
-        padding-left: 11%;
+        padding-left: 5%;
         height: 60%;
         margin-top: 20%;
         p {
@@ -113,7 +114,8 @@
         }
     }
     .join-bib-section{
-        padding-bottom: 60px;
+        padding: 50px 0px;
+        margin-bottom: 60px;
     }
     .coming-soon-section{
         padding-bottom: 60px;
@@ -164,6 +166,7 @@
         margin: auto;
     }
     .bib-walk-text {
+        padding: 40px 0px;
         p{
             text-align: center;
             margin: auto;
@@ -188,11 +191,13 @@
     .bib-walk-text {
         padding-left: 0;
         height: 80%;
-        margin-top: 10%;
+        margin-top: 18%;
         max-width: 380px;
         p{
             margin-top: 0px;
-            transform: translateX(-5%);
+            text-align: center;
+            margin: auto;
+            margin-top: 30px;
         }
     }
 }

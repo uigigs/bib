@@ -142,7 +142,9 @@ ul {
     z-index: 1;
 }
 .join-bib-section{
-    padding-bottom: 130px;
+    background: #4150ae60;
+    padding: 70px 0px;
+    margin-bottom: 120px;
     .shape{
         position: absolute;
         bottom: 80%;
@@ -182,10 +184,10 @@ ul {
 .coming-soon-content{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 40px;
     img{
-        width: 30%;
+        width: 25%;
     }
     h2{
         font-size: 100px;
@@ -294,7 +296,7 @@ ul {
 .bib-walk-text{
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     background: url(../images/talk-shape.png);
     background-position: bottom right;
     height: 70%;
@@ -303,7 +305,6 @@ ul {
     margin: auto;
     margin-top: 15%;
     padding: 40px;
-    padding-left: 13%;
     text-align: center;
     p{
         max-width: 320px;
