@@ -7,6 +7,11 @@
     .section-title{
         font-size: 48px;
     }
+    .join-bib-section{
+        .section-title{
+            font-size: 52px;
+        }
+    }
     .footer-social{
         width: 70%;
         padding: 0px 70px;
@@ -306,6 +311,15 @@
     }
 }
 @media only screen and (max-width: 375px) {
+    .banner-left{
+        p{
+            &.banner-note{
+                span{
+                    transform: translateX(0px);
+                }
+            }
+        }
+    }
     .coming-soon-content {
         h2{
             font-size: 23px;
