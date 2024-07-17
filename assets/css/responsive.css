@@ -131,12 +131,8 @@
   .banner-left h3 {
     font-size: 32px;
   }
-  .banner-left p.banner-note {
-    gap: 0;
-    justify-content: center;
-  }
   .banner-left p.banner-note span {
-    transform: translateX(10px);
+    left: 20px;
   }
   .banner-img {
     max-width: 400px;
@@ -269,7 +265,7 @@
 }
 @media only screen and (max-width: 375px) {
   .banner-left p.banner-note span {
-    transform: translateX(0px);
+    left: 10px;
   }
   .coming-soon-content h2 {
     font-size: 23px;

@@ -4,78 +4,95 @@
         width: 100%;
         padding: 0px 20px;
     }
-    .section-title{
+
+    .section-title {
         font-size: 48px;
     }
-    .join-bib-section{
-        .section-title{
+
+    .join-bib-section {
+        .section-title {
             font-size: 52px;
         }
     }
-    .footer-social{
+
+    .footer-social {
         width: 70%;
         padding: 0px 70px;
-        .footer-social-title{
+
+        .footer-social-title {
             max-width: 560px;
             min-height: 140px;
-            h2{
+
+            h2 {
                 font-size: 48px;
                 margin-bottom: 25px;
             }
         }
     }
-    
+
 }
 
 @media only screen and (max-width: 1400px) {
     .banner-left {
-        h3{
+        h3 {
             font-size: 50px;
         }
     }
 }
+
 @media only screen and (max-width: 1200px) {
-    .banner-section{
+    .banner-section {
         padding: 80px 0px 40px 0px;
     }
+
     .banner-left {
-        h3{
+        h3 {
             font-size: 40px;
         }
     }
-    .join-bib-section{
+
+    .join-bib-section {
         padding: 60px 0px;
         margin-bottom: 20px;
     }
-    .coming-soon-section{
+
+    .coming-soon-section {
         padding-bottom: 50px;
     }
-    .bib-walk-section{
+
+    .bib-walk-section {
         padding-bottom: 80px;
     }
+
     .coming-soon-content {
-        h2{
+        h2 {
             font-size: 70px;
         }
     }
-    .bib-social{
+
+    .bib-social {
         max-width: 800px;
-        ul{
-            li{
+
+        ul {
+            li {
                 width: 20%;
             }
         }
     }
-    .footer-content{
+
+    .footer-content {
         bottom: 5%;
     }
-    .bib-walk-section{
+
+    .bib-walk-section {
         padding-top: 40px;
     }
+
     .bib-walk-text {
         padding-left: 5%;
         height: 60%;
         margin-top: 20%;
+
         p {
             max-width: 270px;
             width: 100%;
@@ -83,25 +100,29 @@
             line-height: 130%;
         }
     }
-    
+
 }
 
 @media only screen and (max-width: 992px) {
-    .banner-left p{
+    .banner-left p {
         font-size: 24px;
     }
-    .coming-soon-content h2{
+
+    .coming-soon-content h2 {
         font-size: 60px;
     }
+
     .crypto-cuties-section {
         .crypto-cuties-right {
-            p{
+            p {
                 font-size: 24px;
             }
-            ul{
-                li{
+
+            ul {
+                li {
                     font-size: 24px;
-                    .icon{
+
+                    .icon {
                         width: 25px;
                         height: auto;
                     }
@@ -109,22 +130,24 @@
             }
         }
     }
-    .bib-walk-section{
+
+    .bib-walk-section {
         padding-top: 20px;
     }
 
-    .section-title{
+    .section-title {
         font-size: 28px;
     }
 
     .bib-walk-text {
-        p{
+        p {
             font-size: 20px;
             max-width: 215px;
         }
     }
+
     .footer-social {
-        .footer-social-title{
+        .footer-social-title {
             max-width: 365px;
             min-height: 85px;
         }
@@ -132,113 +155,135 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .banner-section{
+    .banner-section {
         padding: 60px 0px 0px 0px;
     }
-    .join-bib-section{
+
+    .join-bib-section {
         padding: 80px 0px;
         margin-bottom: 0px;
     }
-    .coming-soon-section{
+
+    .coming-soon-section {
         padding-bottom: 30px;
     }
-    .bib-walk-section{
+
+    .bib-walk-section {
         padding-bottom: 60px;
-        .cloud4{
+
+        .cloud4 {
             bottom: -7%;
         }
     }
-    .banner-left{
+
+    .banner-left {
         text-align: center;
         padding-bottom: 40px;
         padding-top: 0px;
         max-width: 370px;
         margin: auto;
-        h3{
+
+        h3 {
             font-size: 32px;
         }
-        p{
-            &.banner-note{
-                gap: 0;
-                justify-content: center;
-                span{
-                    transform: translateX(10px);
+
+        p {
+            &.banner-note {
+                span {
+                    left: 20px;
                 }
             }
         }
     }
-    .banner-img{
+
+    .banner-img {
         max-width: 400px;
         margin: auto;
     }
-    .coming-soon-section{
+
+    .coming-soon-section {
         padding-bottom: 0px;
     }
+
     .coming-soon-content {
         text-align: center;
         justify-content: center;
         gap: 20px;
-        h2{
+
+        h2 {
             font-size: 40px;
         }
     }
+
     .crypto-cuties-section {
-        .crypto-cuties-left{
+        .crypto-cuties-left {
             max-width: 400px;
             margin: auto;
             margin-bottom: 20px;
         }
+
         .crypto-cuties-right {
             text-align: center;
             max-width: 400px;
             margin: auto;
-            ul{
+
+            ul {
                 padding-left: 30px;
                 max-width: 170px;
                 margin: auto;
                 margin-top: 20px;
                 margin-bottom: 30px;
-                li{
+
+                li {
                     justify-content: flex-start;
                 }
             }
         }
     }
-    
+
     .bib-walk-section {
         padding-top: 0;
-        .cloud4{
+
+        .cloud4 {
             bottom: -5%;
         }
     }
-    .bib-walk-img{
+
+    .bib-walk-img {
         max-width: 400px;
         margin: auto;
     }
+
     .bib-walk-text {
         padding: 40px 0px;
-        p{
+
+        p {
             text-align: center;
             margin: auto;
             margin-top: 30px;
         }
     }
-    .footer-social{
+
+    .footer-social {
         padding: 0px 30px;
-        .bib-social{
+
+        .bib-social {
             margin-top: -10px;
         }
     }
+
     .footer-social .footer-social-title {
         transform: translateX(0px);
         padding: 20px 25px;
     }
+
     .bib-walk-text {
         padding-left: 0;
         height: 80%;
         margin-top: 18%;
         max-width: 380px;
-        p{
+
+        p {
             margin-top: 0px;
             text-align: center;
             margin: auto;
@@ -249,89 +294,105 @@
 
 @media only screen and (max-width: 575px) {
     .banner-left {
-        h3{
+        h3 {
             font-size: 30px;
         }
     }
-    .coming-soon-content{
-        h2{
+
+    .coming-soon-content {
+        h2 {
             font-size: 28px;
         }
     }
-    .join-bib-section{
+
+    .join-bib-section {
         padding: 60px 0px;
     }
+
     .footer-social {
         padding: 0px 15px;
-        h2{
+
+        h2 {
             padding-left: 0px;
             font-size: 21px;
             margin-bottom: 10px;
         }
     }
+
     .header-inner {
         gap: 20px;
-        .logo{
+
+        .logo {
             width: 70px;
         }
-        ul{
+
+        ul {
             gap: 20px;
-            li{
-                a{
+
+            li {
+                a {
                     font-size: 16px;
                 }
             }
         }
     }
-    .bib-walk-section{
-        .cloud4{
+
+    .bib-walk-section {
+        .cloud4 {
             bottom: -3%;
         }
     }
-    .footer-content{
+
+    .footer-content {
         bottom: 50px;
     }
+
     .footer-social {
         .footer-social-title {
             max-width: 285px;
             min-height: 80px;
             padding: 10px 20px;
-            h2{
+
+            h2 {
                 transform: translateY(-4px);
             }
         }
     }
-    
+
 }
 
 @media only screen and (max-width: 480px) {
     .footer-social {
         height: 90px;
-        h2{
+
+        h2 {
             font-size: 16px;
         }
     }
 }
+
 @media only screen and (max-width: 375px) {
+
     .banner-left{
         p{
             &.banner-note{
                 span{
-                    transform: translateX(0px);
+                    left: 10px;
                 }
             }
         }
     }
     .coming-soon-content {
-        h2{
+        h2 {
             font-size: 23px;
         }
     }
-    .header-inner{
-        ul{
-            li{
-                a{
-                    span{
+
+    .header-inner {
+        ul {
+            li {
+                a {
+                    span {
                         display: none;
                     }
                 }
@@ -341,10 +402,11 @@
 
     .crypto-cuties-section {
         .crypto-cuties-right {
-            p{
-                &.cuties-warning{
+            p {
+                &.cuties-warning {
                     margin-left: -25px;
-                    span{
+
+                    span {
                         transform: translateX(30px);
                     }
                 }

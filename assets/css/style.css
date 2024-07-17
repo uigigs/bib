@@ -125,10 +125,13 @@ ul {
   line-height: 130%;
 }
 .banner-left p.banner-note {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 5px;
+  position: relative;
+  padding-left: 40px;
+}
+.banner-left p.banner-note span {
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 .banner-img {
