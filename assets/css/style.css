@@ -110,11 +110,11 @@ ul {
 }
 
 .banner-left {
-  max-width: 560px;
+  max-width: 100%;
   padding-top: 40px;
 }
 .banner-left h3 {
-  font-size: 50px;
+  font-size: 52px;
   line-height: 140%;
 }
 .banner-left h3.mb-30 {
@@ -138,6 +138,10 @@ ul {
 }
 .banner-img img {
   width: 100%;
+}
+
+.title-shadow {
+  text-shadow: 3px 4px 0px #D7AC0D;
 }
 
 .section-title {
