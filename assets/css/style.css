@@ -19,7 +19,6 @@ body {
 }
 
 .body-continer {
-  overflow-x: hidden;
   background: url(../images/maib-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -124,6 +123,12 @@ ul {
 .banner-left p {
   font-size: 28px;
   line-height: 130%;
+}
+.banner-left p.banner-note {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
 }
 
 .banner-img {
@@ -249,6 +254,12 @@ ul {
   line-height: 130%;
   max-width: 515px;
 }
+.crypto-cuties-section .crypto-cuties-right p.cuties-warning {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 5px;
+}
 .crypto-cuties-section .crypto-cuties-right ul {
   margin-top: 30px;
 }
@@ -313,10 +324,11 @@ ul {
   text-align: center;
 }
 .bib-walk-text p {
-  max-width: 320px;
+  max-width: 345px;
   width: 100%;
   font-size: 32px;
   line-height: 130%;
+  font-family: "Chewy", system-ui;
 }
 
 .bib-walk-img {

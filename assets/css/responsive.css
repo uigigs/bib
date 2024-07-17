@@ -34,6 +34,9 @@
   .footer-content {
     bottom: 5%;
   }
+  .bib-walk-section {
+    padding-top: 40px;
+  }
   .bib-walk-text {
     padding-left: 5%;
     height: 60%;
@@ -59,19 +62,19 @@
   .crypto-cuties-section .crypto-cuties-right ul li {
     font-size: 24px;
   }
-  .bib-walk-text p {
-    font-size: 24px;
+  .crypto-cuties-section .crypto-cuties-right ul li .icon {
+    width: 25px;
+    height: auto;
+  }
+  .bib-walk-section {
+    padding-top: 20px;
   }
   .section-title {
     font-size: 28px;
   }
   .bib-walk-text p {
     font-size: 20px;
-    max-width: 200px;
-  }
-  .crypto-cuties-section .crypto-cuties-right ul li .icon {
-    width: 25px;
-    height: auto;
+    max-width: 215px;
   }
   .footer-social .footer-social-title {
     max-width: 365px;
@@ -81,9 +84,6 @@
 @media only screen and (max-width: 768px) {
   .banner-section {
     padding: 60px 0px 0px 0px;
-  }
-  .banner-left h3 {
-    font-size: 32px;
   }
   .join-bib-section {
     padding: 80px 0px;
@@ -104,6 +104,16 @@
     padding-top: 0px;
     max-width: 370px;
     margin: auto;
+  }
+  .banner-left h3 {
+    font-size: 32px;
+  }
+  .banner-left p.banner-note {
+    gap: 0;
+    justify-content: center;
+  }
+  .banner-left p.banner-note span {
+    transform: translateX(10px);
   }
   .banner-img {
     max-width: 400px;
@@ -133,6 +143,16 @@
   .crypto-cuties-section .crypto-cuties-right ul {
     margin-top: 20px;
     margin-bottom: 30px;
+    padding-left: 30px;
+  }
+  .crypto-cuties-section .crypto-cuties-right ul li {
+    justify-content: flex-start;
+  }
+  .bib-walk-section {
+    padding-top: 0;
+  }
+  .bib-walk-section .cloud4 {
+    bottom: -5%;
   }
   .bib-walk-img {
     max-width: 400px;
@@ -155,9 +175,6 @@
   .footer-social .footer-social-title {
     transform: translateX(0px);
     padding: 20px 25px;
-  }
-  .crypto-cuties-section .crypto-cuties-right ul li {
-    justify-content: center;
   }
   .bib-walk-text {
     padding-left: 0;
@@ -203,7 +220,10 @@
     font-size: 16px;
   }
   .bib-walk-section .cloud4 {
-    bottom: -4%;
+    bottom: -3%;
+  }
+  .footer-content {
+    bottom: 50px;
   }
   .footer-social .footer-social-title {
     max-width: 285px;
@@ -228,5 +248,11 @@
   }
   .header-inner ul li a span {
     display: none;
+  }
+  .crypto-cuties-section .crypto-cuties-right p.cuties-warning {
+    margin-left: -25px;
+  }
+  .crypto-cuties-section .crypto-cuties-right p.cuties-warning span {
+    transform: translateX(30px);
   }
 }

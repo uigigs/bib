@@ -19,7 +19,6 @@ body {
 }
 
 .body-continer {
-    overflow-x: hidden;
     background: url(../images/maib-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,6 +122,12 @@ ul {
     p{
         font-size: 28px;
         line-height: 130%;
+        &.banner-note{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 5px;
+        }
     }
 }
 .banner-img{
@@ -245,6 +250,12 @@ ul {
             font-size: 32px;
             line-height: 130%;
             max-width: 515px;
+            &.cuties-warning{
+                display: flex;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 5px;
+            }
         }
         ul{
             margin-top: 30px;
@@ -312,11 +323,11 @@ ul {
     padding: 40px;
     text-align: center;
     p{
-        max-width: 320px;
+        max-width: 345px;
         width: 100%;
         font-size: 32px;
         line-height: 130%;
-    
+        font-family: "Chewy", system-ui;
     }
 }
 
