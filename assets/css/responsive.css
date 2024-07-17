@@ -4,6 +4,9 @@
     width: 100%;
     padding: 0px 20px;
   }
+  .section-title {
+    font-size: 48px;
+  }
   .footer-social {
     width: 70%;
     padding: 0px 70px;
