@@ -141,7 +141,8 @@ ul {
 }
 
 .title-shadow {
-  text-shadow: 2px 3px 0px #7E1717;
+  color: #FDCB1B;
+  text-shadow: 2px 3px 0px #111;
 }
 
 .section-title {
