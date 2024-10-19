@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-.custom-container{
-    max-width: 1414px;
-    margin: auto;
-    padding: 0px 20px;
-}
+
 .bib-profile-banner{
     padding-top: 30px;
     padding-bottom: 57px;
@@ -66,7 +62,7 @@
 }
 
 .bib-partners-section{
-    padding-bottom: 127px;
+    padding-bottom: 50px;
     .profile-title{
         margin-top: -5%;
     }
@@ -93,5 +89,159 @@
         padding: 5px 20px;
         height: 113px;
         margin-bottom: 40px;
+    }
+}
+
+.bib-profile-footer{
+    padding-bottom: 12px;
+}
+.bib-profile-footer-video{
+    padding: 8%;
+    position: relative;
+    .footer-video-frame{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    video{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .custom-container{
+        max-width: 1440px !important;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .profile-title{
+        font-size: 60px;
+    }
+    .profile-banner-img{
+        max-width: 85%;
+    }
+    .partners-img{
+        max-width: 90%;
+        margin: auto;
+    }
+    .create-own-profile-pic{
+        &-content{
+            margin: 0px -15px;
+        }
+        &-col{
+            padding: 0px 15px;
+            width: 33.33%;
+            img{
+                width: 95%;
+            }
+            h3{
+                font-size: 26px;
+            }
+            p{
+                font-size: 16px;
+                max-width: 280px;
+            }
+        }
+    }
+    .bib-partners-section{
+        padding-bottom: 30px;
+    }
+    .bib-partners-logo {
+        margin-top: 40px;
+        ul{
+            margin: 0px -15px;
+            li{
+                padding: 0px 15px;
+            }
+        }
+        .partners-logo-card{
+            padding: 10px 40px;
+            height: 90px;
+            margin-bottom: 30px;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .profile-title{
+        font-size: 40px;
+    }
+    .create-own-profile-pic {
+        padding-bottom: 40px;
+        .profile-title{
+            max-width: 400px;
+        }
+    }
+    .create-own-profile-pic-col {
+        h3{
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    .bib-partners-logo {
+        .partners-logo-card {
+            padding: 10px 20px;
+            height: 80px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .create-own-profile-pic{
+        &-content{
+            flex-wrap: wrap;
+        }
+        &-col{
+            width: 50%;
+            margin-bottom: 40px;
+            h3{
+                font-size: 23px;
+            }
+            &:nth-last-child(1){
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .bib-partners-logo {
+        .partners-logo-card{
+            height: 70px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .create-own-profile-pic{
+        &-col{
+            text-align: center;
+            width: 100%;
+            img{
+                width: 100%;
+            }
+            h3{
+                margin-top: 15px;
+            }
+            p{
+                margin: auto;
+            }
+        }
+    }
+    .bib-partners-logo{
+        ul{
+            li{
+                width: 50%;
+                .partners-logo-card{
+                    padding: 0px 20%;
+                }
+            }
+        }
     }
 }
