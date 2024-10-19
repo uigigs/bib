@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.custom-container{
+    max-width: 1414px;
+    margin: auto;
+    padding: 0px 20px;
+}
+.bib-profile-banner{
+    padding-top: 30px;
+    padding-bottom: 57px;
+    text-align: center;
+}
+.profile-logo{
+    margin: auto;
+    max-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-banner-img{
+    margin: auto;
+}
+.profile-title{
+    color: #FDCB1C;
+    text-shadow: 2px 5px 0px #000;
+    font-family: Chewy;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 112.5%;
+}
+.create-own-profile-pic{
+    padding-bottom: 78px;
+    .profile-title {
+        max-width: 580px;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 36px;
+    }
+    &-content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &-col{
+        width: 27%;
+        img{
+            width: 100%;
+        }
+        h3{
+            color: #FFF;
+            font-family: Chewy;
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 150%;
+            margin: 30px 0px 20px 0px;
+        }
+        p{
+            max-width: 330px;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 160%;
+        }
+    }
+}
+
+.bib-partners-section{
+    padding-bottom: 127px;
+    .profile-title{
+        margin-top: -5%;
+    }
+}
+.bib-partners-logo{
+    margin-top: 60px;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0px -20px;
+        flex-wrap: wrap;
+        li{
+            padding: 0px 20px;
+            width: 25%;
+        }
+    }
+    .partners-logo-card{
+        border-radius: 20px;
+        background: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 20px;
+        height: 113px;
+        margin-bottom: 40px;
+    }
+}
