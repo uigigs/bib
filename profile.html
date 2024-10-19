@@ -12,15 +12,24 @@
 </head>
 
 <body>
-    <div class="body-continer">
+    <div class="body-continer profile-body-container">
         <!-- bib-profile-banner start -->
         <section class="bib-profile-banner">
             <div class="custom-container container">
                 <a href="#" class="profile-logo">
                     <img src="./assets/images/profile/profile-logo.png" alt="logo" />
                 </a>
-                <div class="profile-banner-img">
+                <!-- <div class="profile-banner-img">
                     <img src="./assets/images/profile/car-img.png" alt="img">
+                </div> -->
+                <div class="profile-banner-video">
+                    <div class="shape-1"></div>
+                    <div class="shape-2"></div>
+                    <div class="shape-3"></div>
+                    <div class="shape-4"></div>
+                    <video loop autoplay playsinline muted>
+                        <source src="./assets/videos/profile-banner-video.mp4" type="video/mp4" />
+                    </video>
                 </div>
             </div>
             <!-- <div class="profile-banner-video">
@@ -38,21 +47,21 @@
                 <div class="create-own-profile-pic-content">
                     <div class="create-own-profile-pic-col">
                         <div class="create-profile-pic-card">
-                            <img src="./assets/images/profile/card-1.png" alt="img">
+                            <img src="./assets/images/profile/card-1.png" alt="img" class="jumpingDown">
                             <h3>Collect Packs</h3>
                             <p>The next-gen avatar platform that empowers users to create, customize, and carry their digital identities across</p>
                         </div>
                     </div>
                     <div class="create-own-profile-pic-col">
                         <div class="create-profile-pic-card">
-                            <img src="./assets/images/profile/card-2.png" alt="img">
+                            <img src="./assets/images/profile/card-2.png" alt="img" class="jumpingUp">
                             <h3>Customize your avatar</h3>
                             <p>The next-gen avatar platform that empowers users to create, customize, and carry their digital identities</p>
                         </div>
                     </div>
                     <div class="create-own-profile-pic-col">
                         <div class="create-profile-pic-card">
-                            <img src="./assets/images/profile/card-3.png" alt="img">
+                            <img src="./assets/images/profile/card-3.png" alt="img" class="jumpingDown">
                             <h3>Play and explore</h3>
                             <p>The next-gen avatar platform that empowers users to create, customize, and carry their digital identities across multiple</p>
                         </div>
@@ -64,6 +73,10 @@
 
         <!-- bib-partners start -->
          <section class="bib-partners-section">
+            <img src="./assets/images/profile/cloud-1.png" alt="shape" class="profile-cloud-1">
+            <img src="./assets/images/profile/cloud-2.png" alt="shape" class="profile-cloud-2">
+            <img src="./assets/images/profile/cloud-3.png" alt="shape" class="profile-cloud-3">
+            <img src="./assets/images/profile/cloud-4.png" alt="shape" class="profile-cloud-4">
             <div class="container">
                 <div class="partners-img">
                     <img src="./assets/images/profile/bib-partners.png" alt="img">
@@ -109,6 +122,60 @@
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var cloud3 = $(".profile-cloud-2");
+        if (cloud3.length) {
+            $(window).on("scroll", function () {
+                var cloud3 = $(".profile-cloud-2");
+                var y = window.scrollY;
+                var x;
+                x = cloud3.offset().top;
+                x = x - 400;
+
+                let animationValue = 1;
+                animationValue = (y - x) / 9;
+
+                let animationStop = 100;
+
+                if (animationValue < 0) {
+                    animationValue > 0;
+                }
+
+                if (animationValue > animationStop) {
+                    animationValue = animationStop;
+                }
+
+                cloud3.css("transform", `translateX(${animationValue}px)`);
+            });
+        }
+
+        var cloud2 = $(".profile-cloud-3");
+        if (cloud2.length) {
+            $(window).on("scroll", function () {
+                var cloud2 = $(".profile-cloud-3");
+                var y = window.scrollY;
+                var x;
+                x = cloud2.offset().top;
+                x = x - 400;
+
+                let animationValue = 1;
+                animationValue = (-1 * (y - x)) / 9;
+
+                let animationStop = 100;
+
+                if (animationValue < 0) {
+                    animationValue > 0;
+                }
+
+                if (animationValue > animationStop) {
+                    animationValue = animationStop;
+                }
+
+                cloud2.css("transform", `translateX(${animationValue}px)`);
+            });
+        }
+    </script>
 </body>
 
 </html>

@@ -392,6 +392,10 @@ ul {
   margin-top: 0px;
 }
 
+.profile-body-container {
+  overflow-x: hidden;
+}
+
 .bib-profile-banner {
   padding-top: 30px;
   padding-bottom: 57px;
@@ -408,6 +412,59 @@ ul {
 
 .profile-banner-img {
   margin: auto;
+}
+
+.profile-banner-video {
+  position: relative;
+}
+.profile-banner-video .shape-1 {
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background: linear-gradient(163deg, rgba(76, 137, 217, 0.1) 12.01%, rgba(217, 217, 217, 0) 87.99%);
+  -webkit-backdrop-filter: blur(36px);
+          backdrop-filter: blur(36px);
+}
+.profile-banner-video .shape-2 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: -60px;
+  height: 100%;
+  width: 90px;
+  background: linear-gradient(90deg, rgba(76, 137, 217, 0.1) 0.32%, rgba(217, 217, 217, 0) 99.68%);
+  -webkit-backdrop-filter: blur(36px);
+          backdrop-filter: blur(36px);
+}
+.profile-banner-video .shape-3 {
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background: linear-gradient(163deg, rgba(76, 137, 217, 0.1) 12.01%, rgba(217, 217, 217, 0) 87.99%);
+  -webkit-backdrop-filter: blur(36px);
+          backdrop-filter: blur(36px);
+}
+.profile-banner-video .shape-4 {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: -60px;
+  height: 100%;
+  width: 90px;
+  background: linear-gradient(90deg, rgba(217, 217, 217, 0) 0.32%, rgba(72, 104, 217, 0.1) 99.68%);
+  -webkit-backdrop-filter: blur(36px);
+          backdrop-filter: blur(36px);
+}
+.profile-banner-video video {
+  width: 100%;
+  position: relative;
+  z-index: 0;
 }
 
 .profile-title {
@@ -459,6 +516,27 @@ ul {
 
 .bib-partners-section {
   padding-bottom: 50px;
+  position: relative;
+}
+.bib-partners-section .profile-cloud-1 {
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+.bib-partners-section .profile-cloud-2 {
+  position: absolute;
+  top: -20px;
+  left: 15%;
+}
+.bib-partners-section .profile-cloud-3 {
+  position: absolute;
+  top: -50px;
+  right: 10%;
+}
+.bib-partners-section .profile-cloud-4 {
+  position: absolute;
+  top: 0px;
+  right: 0%;
 }
 .bib-partners-section .profile-title {
   margin-top: -5%;
@@ -509,6 +587,36 @@ ul {
   width: 100%;
 }
 
+.jumpingDown {
+  animation: jumpingDown 4.5s infinite;
+}
+
+.jumpingUp {
+  animation: jumpingUp 5s infinite;
+}
+
+@keyframes jumpingDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes jumpingUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 @media only screen and (min-width: 1200px) {
   .custom-container {
     max-width: 1440px !important;
