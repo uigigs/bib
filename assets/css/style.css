@@ -480,6 +480,11 @@ ul {
 .create-own-profile-pic {
   padding-bottom: 78px;
 }
+.create-own-profile-pic .section-title {
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 50px;
+}
 .create-own-profile-pic .profile-title {
   max-width: 580px;
   width: 100%;
