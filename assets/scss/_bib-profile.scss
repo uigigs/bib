@@ -128,21 +128,25 @@
             position: absolute;
             top: -50px;
             left: 0;
+            width: 14%;
         }
         &-2{
             position: absolute;
             top: -20px;
             left: 15%;
+            width: 7%;
         }
         &-3{
             position: absolute;
             top: -50px;
             right: 10%;
+            width: 13%;
         }
         &-4{
             position: absolute;
             top: 0px;
             right: 0%;
+            width: 5%;
         }
     }
     .profile-title{
@@ -305,6 +309,19 @@
             height: 80px;
         }
     }
+    .bib-partners-section{
+        padding-bottom: 20px !important;
+    }
+    .create-own-profile-pic{
+        .section-title{
+            margin-bottom: 30px;
+        }
+    }
+    .create-own-profile-pic {
+        .section-title{
+            max-width: 310px;
+        }
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -328,6 +345,9 @@
             height: 70px;
         }
     }
+    .bib-partners-section{
+        padding-bottom: 10px !important;
+    }
 }
 
 @media only screen and (max-width: 575px){
@@ -345,6 +365,9 @@
                 margin: auto;
             }
         }
+    }
+    .bib-partners-section{
+        padding-bottom: 0px !important;
     }
     .bib-partners-logo{
         ul{

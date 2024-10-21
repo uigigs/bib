@@ -155,6 +155,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .header-2{
+        .header-inner {
+            .menu-list{
+                display: none;
+            }
+            .logo{
+                max-width: 60px;
+            }
+        }
+    }
+    
+
     .banner-section {
         padding: 60px 0px 0px 0px;
     }

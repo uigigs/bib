@@ -25,6 +25,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 .body-continer .container {
   position: relative;
@@ -68,6 +69,21 @@ ul {
 
 .header-section {
   background: #101033;
+  transition: 0.3s;
+}
+.header-section.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background: rgba(16, 16, 51, 0.9);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: 0.5s;
+}
+.header-section.sticky .header-inner .logo {
+  max-width: 60px;
 }
 
 .header-inner {
@@ -76,12 +92,14 @@ ul {
   justify-content: space-between;
   padding: 10px 0px;
   gap: 30px;
+  transition: 0.5s;
 }
 .header-inner .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100px;
+  transition: 0.5s;
 }
 .header-inner ul {
   display: flex;
@@ -527,21 +545,25 @@ ul {
   position: absolute;
   top: -50px;
   left: 0;
+  width: 14%;
 }
 .bib-partners-section .profile-cloud-2 {
   position: absolute;
   top: -20px;
   left: 15%;
+  width: 7%;
 }
 .bib-partners-section .profile-cloud-3 {
   position: absolute;
   top: -50px;
   right: 10%;
+  width: 13%;
 }
 .bib-partners-section .profile-cloud-4 {
   position: absolute;
   top: 0px;
   right: 0%;
+  width: 5%;
 }
 .bib-partners-section .profile-title {
   margin-top: -5%;
@@ -695,6 +717,15 @@ ul {
     padding: 10px 20px;
     height: 80px;
   }
+  .bib-partners-section {
+    padding-bottom: 20px !important;
+  }
+  .create-own-profile-pic .section-title {
+    margin-bottom: 30px;
+  }
+  .create-own-profile-pic .section-title {
+    max-width: 310px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .create-own-profile-pic-content {
@@ -713,6 +744,9 @@ ul {
   .bib-partners-logo .partners-logo-card {
     height: 70px;
   }
+  .bib-partners-section {
+    padding-bottom: 10px !important;
+  }
 }
 @media only screen and (max-width: 575px) {
   .create-own-profile-pic-col {
@@ -728,10 +762,83 @@ ul {
   .create-own-profile-pic-col p {
     margin: auto;
   }
+  .bib-partners-section {
+    padding-bottom: 0px !important;
+  }
   .bib-partners-logo ul li {
     width: 50%;
   }
   .bib-partners-logo ul li .partners-logo-card {
     padding: 0px 20%;
+  }
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-menu .navbar-toggler {
+  height: 32px;
+  width: 32px;
+}
+.mobile-menu .btn-close {
+  background-image: none;
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 11;
+}
+.mobile-menu .offcanvas {
+  transition: transform 0.6s ease-in-out;
+}
+
+.mobile-menu-body {
+  background: #FFFFFF;
+  height: 100vh;
+}
+.mobile-menu-body .offcanvas-header .mobile-menu-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  max-width: 100px;
+  margin: auto;
+}
+.mobile-menu-body .offcanvas-header .btn-close {
+  background: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+.mobile-menu-body .navbar-nav {
+  text-align: center;
+  padding-right: 0px !important;
+}
+
+.mobile-menu-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.mobile-menu-list li {
+  margin-bottom: 20px;
+  text-align: left;
+  min-width: -moz-max-content !important;
+  min-width: max-content !important;
+}
+.mobile-menu-list li a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  color: #111111;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 991px) {
+  .mobile-menu {
+    display: block;
   }
 }
