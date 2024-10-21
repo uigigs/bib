@@ -231,10 +231,6 @@
 .bib-team-section{
     padding: 50px 0px;
 } 
-.team-member-card{
-    padding: 0px 17px;
-    margin-bottom: 30px;
-}
 .team-img{
     position: relative;
     z-index: 1;
@@ -243,7 +239,7 @@
     }
 }
 .team-member-detail{
-    padding: 48px 20px 20px 20px;
+    padding: 48px 10px 5px 10px;
     border-radius: 0px 0px 30px 30px;
     background: rgba(0, 0, 0, 0.10);
     max-width: 90%;
@@ -251,6 +247,7 @@
     position: relative;
     z-index: 0;
     margin-top: -35px;
+    position: relative;
     .name{
         color: #FDCB1C;
         text-align: center;
@@ -260,6 +257,9 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
+        margin-bottom: 8px;
+        position: relative;
+        z-index: 1;
     }
     .designation{
         color: #FFF;
@@ -269,8 +269,133 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%;
+        margin-bottom: 15px;
+        position: relative;
+        z-index: 1;
+    }
+    .about-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 0px 0px 30px 30px;
+        background: rgba(0, 0, 0, 0.20);
+        color: #FFF;
+        text-align: center;
+        font-family: Chewy;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 125%;
+        padding: 10px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        z-index: 0;
+        transition: 0.3s;
     }
 } 
+.team-member-card{
+    padding: 0px 14px;
+    margin-bottom: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover{
+        .team-member-detail{
+            border-radius: 0px;
+            transition: 0.3s;
+            .about-btn{
+                bottom: -50px;
+                overflow: visible;
+                opacity: 1;
+                z-index: 1;
+                height: auto;
+            }
+        }
+    }
+}
+
+.team-popup{
+    .fade{
+        background: rgba(21, 36, 89, 0.80);
+        backdrop-filter: blur(5px);
+    }
+    .modal-dialog{
+        max-width: 570px;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .modal-content{
+        border: none;
+        background: transparent;
+        max-width: 570px;
+        margin: auto;
+    }
+    .btn-close{
+        margin-left: auto;
+        opacity: 1;
+        background: transparent;
+        outline: none !important;
+        box-shadow: none !important;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+}
+.team-modal-img{
+    max-width: 347px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+    img{
+        width: 100%;
+    }
+}
+.team-modal-detail{
+    margin-top: -41px;
+    position: relative;
+    z-index: 1;
+    border-radius: 30px;
+    background: #FFF;
+    padding: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    h4{
+        color: #FDCB1C;
+        text-align: center;
+        text-shadow: 2px 5px 0px #000;
+        font-family: Chewy;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+    }
+    h6{
+        color: #111;
+        text-align: center;
+        font-family: Chewy;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 20px;
+    }
+    p{
+        color: #111;
+        text-align: center;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 153.846%;
+        max-width: 470px;
+        width: 100%;
+        margin: auto;
+    }
+}
+
 
 @media only screen and (min-width: 1200px){
     .custom-container{
@@ -384,6 +509,14 @@
     .bib-team-section{
         padding-bottom: 0px;
     }
+    .team-member-detail{
+        .name{
+            font-size: 26px;
+        }
+        .designation{
+            font-size: 22px;
+        }
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -444,11 +577,16 @@
             }
         }
     }
+    .team-modal-detail {
+        p{
+            font-size: 20px;
+        }
+    }
     
     .team-member-card{
         max-width: 360px;
         margin: auto;
-        margin-bottom: 30px;
+        margin-bottom: 90px;
     }
 
 }

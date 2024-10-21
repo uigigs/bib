@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIB - Home</title>
+    <link rel="shortcut icon" href="./assets/images/profile/profile-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="body-continer">
+        <!-- bib-team start -->
+        <section class="bib-team-section">
+            <div class="container">
+                <div class="row">
+                    <!-- Team Member 1 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member-card">
+                            <div class="team-img">
+                                <img src="./assets/images/profile/t_img_1.png" alt="img">
+                            </div>
+                            <div class="team-member-detail">
+                                <h4 class="name">NEO BIB</h4>
+                                <h6 class="designation">CEO</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                <a href="#" class="about-btn" data-bs-toggle="modal" 
+                                   data-bs-target="#teamPopup"
+                                   data-img="./assets/images/profile/t_img_1.png"
+                                   data-name="NEO BIB"
+                                   data-designation="CEO"
+                                   data-description="Lorem ipsum dolor sit amet consectetur adipisicing.">
+                                    More About
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="col-md-4 col-sm-6">
+                        <div class="team-member-card">
+                            <div class="team-img">
+                                <img src="./assets/images/profile/t_img_2.png" alt="img">
+                            </div>
+                            <div class="team-member-detail">
+                                <h4 class="name">Hefner BIB</h4>
+                                <h6 class="designation">CMO</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <a href="#" class="about-btn" data-bs-toggle="modal" 
+                                   data-bs-target="#teamPopup"
+                                   data-img="./assets/images/profile/t_img_2.png"
+                                   data-name="Hefner BIB"
+                                   data-designation="CMO"
+                                   data-description="Lorem ipsum dolor sit amet consectetur.">
+                                    More About
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more team members similarly -->
+                </div>
+            </div>
+        </section>
+        <!-- bib-team end -->
+
+        <!-- team popup start -->
+        <div class="team-popup">
+            <!-- Modal -->
+            <div class="modal fade" id="teamPopup" tabindex="-1" aria-labelledby="teamPopupLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="team-modal-img">
+                            <img id="modal-img" src="./assets/images/profile/t_img_6.png" alt="img">
+                        </div>
+                        <div class="team-modal-detail">
+                            <h4 class="name" id="modal-name">Knight BIB</h4>
+                            <h6 class="designation" id="modal-designation">Community Manager</h6>
+                            <p id="modal-description">With 10 years of experience in the e-commerce space</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- team popup end -->
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // When a team member's "More About" button is clicked
+            $('.about-btn').on('click', function() {
+                // Get data from the button
+                var imgSrc = $(this).data('img');
+                var name = $(this).data('name');
+                var designation = $(this).data('designation');
+                var description = $(this).data('description');
+
+                // Update the modal content dynamically
+                $('#modal-img').attr('src', imgSrc);
+                $('#modal-name').text(name);
+                $('#modal-designation').text(designation);
+                $('#modal-description').text(description);
+            });
+        });
+    </script>
+</body>
+
+</html>
