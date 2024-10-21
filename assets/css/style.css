@@ -177,7 +177,7 @@ ul {
 
 .join-bib-section {
   background: linear-gradient(180deg, rgba(65, 80, 174, 0) 0%, rgba(65, 80, 174, 0.6) 25%, #4150AE 50%, rgba(65, 80, 174, 0.6) 75%, rgba(65, 80, 174, 0) 100%);
-  padding: 120px 0px;
+  padding: 60px 0px 120px 0px;
   margin-bottom: 120px;
 }
 .join-bib-section .shape {
@@ -190,7 +190,7 @@ ul {
 }
 
 .bib-social {
-  max-width: 1000px;
+  max-width: 750px;
   width: 100%;
   margin: auto;
   position: relative;
@@ -202,7 +202,7 @@ ul {
   justify-content: space-between;
 }
 .bib-social ul li {
-  width: 18%;
+  width: 20%;
 }
 .bib-social ul li a {
   display: flex;
