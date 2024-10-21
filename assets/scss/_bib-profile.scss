@@ -81,8 +81,8 @@
 .create-own-profile-pic{
     padding-bottom: 78px;
     .section-title{
-        max-width: 400px;
-        margin: auto;
+        // max-width: 400px;
+        // margin: auto;
         margin-bottom: 50px;
     }
     .profile-title {
@@ -102,7 +102,7 @@
             width: 100%;
         }
         h3{
-            color: #FFF;
+            color: #FDCB1C;
             font-family: Chewy;
             font-size: 36px;
             font-weight: 400;
@@ -317,11 +317,11 @@
             margin-bottom: 30px;
         }
     }
-    .create-own-profile-pic {
-        .section-title{
-            max-width: 310px;
-        }
-    }
+    // .create-own-profile-pic {
+    //     .section-title{
+    //         max-width: 310px;
+    //     }
+    // }
 }
 
 @media only screen and (max-width: 767px){

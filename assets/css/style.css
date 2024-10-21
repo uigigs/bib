@@ -499,8 +499,6 @@ ul {
   padding-bottom: 78px;
 }
 .create-own-profile-pic .section-title {
-  max-width: 400px;
-  margin: auto;
   margin-bottom: 50px;
 }
 .create-own-profile-pic .profile-title {
@@ -521,7 +519,7 @@ ul {
   width: 100%;
 }
 .create-own-profile-pic-col h3 {
-  color: #FFF;
+  color: #FDCB1C;
   font-family: Chewy;
   font-size: 36px;
   font-weight: 400;
@@ -722,9 +720,6 @@ ul {
   }
   .create-own-profile-pic .section-title {
     margin-bottom: 30px;
-  }
-  .create-own-profile-pic .section-title {
-    max-width: 310px;
   }
 }
 @media only screen and (max-width: 767px) {
