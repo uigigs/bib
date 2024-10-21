@@ -530,9 +530,8 @@ ul {
 .create-own-profile-pic-col p {
   max-width: 330px;
   color: #FFF;
-  font-family: Inter;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 160%;
 }
 
