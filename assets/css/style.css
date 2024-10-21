@@ -642,6 +642,53 @@ ul {
     transform: translateY(0);
   }
 }
+.bib-team-section {
+  padding: 50px 0px;
+}
+
+.team-member-card {
+  padding: 0px 17px;
+  margin-bottom: 30px;
+}
+
+.team-img {
+  position: relative;
+  z-index: 1;
+}
+.team-img img {
+  width: 100%;
+}
+
+.team-member-detail {
+  padding: 48px 20px 20px 20px;
+  border-radius: 0px 0px 30px 30px;
+  background: rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+  z-index: 0;
+  margin-top: -35px;
+}
+.team-member-detail .name {
+  color: #FDCB1C;
+  text-align: center;
+  text-shadow: 2px 5px 0px #000;
+  font-family: Chewy;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.team-member-detail .designation {
+  color: #FFF;
+  text-align: center;
+  font-family: Chewy;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 @media only screen and (min-width: 1200px) {
   .custom-container {
     max-width: 1440px !important;
@@ -693,6 +740,18 @@ ul {
     height: 90px;
     margin-bottom: 30px;
   }
+  .bib-team-section {
+    padding: 30px 0px;
+  }
+  .team-member-card {
+    padding: 0px;
+  }
+  .team-member-detail .name {
+    font-size: 32px;
+  }
+  .team-member-detail .designation {
+    font-size: 24px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .profile-title {
@@ -720,6 +779,9 @@ ul {
   }
   .create-own-profile-pic .section-title {
     margin-bottom: 30px;
+  }
+  .bib-team-section {
+    padding-bottom: 0px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -768,6 +830,11 @@ ul {
   }
   .bib-partners-logo ul li .partners-logo-card {
     padding: 0px 20%;
+  }
+  .team-member-card {
+    max-width: 360px;
+    margin: auto;
+    margin-bottom: 30px;
   }
 }
 .mobile-menu {
