@@ -754,13 +754,16 @@ ul {
     width: 100%;
   }
   .create-own-profile-pic-col img {
-    width: 100%;
+    width: 70%;
+    margin: auto;
   }
   .create-own-profile-pic-col h3 {
     margin-top: 15px;
+    font-size: 28px;
   }
   .create-own-profile-pic-col p {
     margin: auto;
+    font-size: 16px;
   }
   .bib-partners-section {
     padding-bottom: 0px !important;
@@ -837,7 +840,7 @@ ul {
   justify-content: center;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   .mobile-menu {
     display: block;
   }

@@ -136,7 +136,7 @@
     }
 
     .section-title {
-        font-size: 28px;
+        font-size: 40px;
     }
 
     .bib-walk-text {
@@ -150,6 +150,9 @@
         .footer-social-title {
             max-width: 365px;
             min-height: 85px;
+            .section-title{
+                font-size: 28px;
+            }
         }
     }
 }

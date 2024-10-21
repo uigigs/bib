@@ -93,7 +93,7 @@
     padding-top: 20px;
   }
   .section-title {
-    font-size: 28px;
+    font-size: 40px;
   }
   .bib-walk-text p {
     font-size: 20px;
@@ -102,6 +102,9 @@
   .footer-social .footer-social-title {
     max-width: 365px;
     min-height: 85px;
+  }
+  .footer-social .footer-social-title .section-title {
+    font-size: 28px;
   }
 }
 @media only screen and (max-width: 768px) {
