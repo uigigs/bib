@@ -470,10 +470,10 @@
             h3{
                 font-size: 26px;
             }
-            p{
-                font-size: 16px;
-                max-width: 280px;
-            }
+            // p{
+            //     font-size: 16px;
+            //     max-width: 280px;
+            // }
         }
     }
     .bib-partners-section{
@@ -520,15 +520,15 @@
             max-width: 400px;
         }
     }
-    .create-own-profile-pic-col {
-        h3{
-            font-size: 20px;
-            margin-bottom: 12px;
-        }
-        p{
-            font-size: 14px;
-        }
-    }
+    // .create-own-profile-pic-col {
+        // h3{
+        //     font-size: 20px;
+        //     margin-bottom: 12px;
+        // }
+        // p{
+        //     font-size: 14px;
+        // }
+    // }
     .bib-partners-logo {
         .partners-logo-card {
             padding: 10px 20px;
@@ -569,8 +569,11 @@
         &-col{
             width: 50%;
             margin-bottom: 40px;
-            h3{
-                font-size: 23px;
+            // h3{
+            //     font-size: 23px;
+            // }
+            p{
+                font-size: 24px;
             }
             &:nth-last-child(1){
                 margin-bottom: 0px;
@@ -596,16 +599,17 @@
                 width: 70%;
                 margin: auto;
             }
-            h3{
-                margin-top: 15px;
-                font-size: 28px;
-            }
+            // h3{
+            //     margin-top: 15px;
+            //     font-size: 28px;
+            // }
             p{
                 margin: auto;
-                font-size: 16px;
+                // font-size: 16px;
             }
         }
     }
+    
     .bib-partners-section{
         padding-bottom: 0px !important;
     }
@@ -630,9 +634,9 @@
         }
     }
     .team-member-card{
-        max-width: 360px;
+        max-width: 300px;
         margin: auto;
-        margin-bottom: 90px;
+        margin-bottom: 60px;
     }
 
 }

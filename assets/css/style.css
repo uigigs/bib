@@ -350,7 +350,6 @@ ul {
 
 .bib-walk-section {
   padding-bottom: 130px;
-  padding-top: 90px;
   position: relative;
   z-index: 1;
 }
@@ -935,10 +934,6 @@ ul {
   .create-own-profile-pic-col h3 {
     font-size: 26px;
   }
-  .create-own-profile-pic-col p {
-    font-size: 16px;
-    max-width: 280px;
-  }
   .bib-partners-section {
     padding-bottom: 30px;
   }
@@ -979,13 +974,6 @@ ul {
   .create-own-profile-pic .profile-title {
     max-width: 400px;
   }
-  .create-own-profile-pic-col h3 {
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-  .create-own-profile-pic-col p {
-    font-size: 14px;
-  }
   .bib-partners-logo .partners-logo-card {
     padding: 10px 20px;
     height: 80px;
@@ -1014,8 +1002,8 @@ ul {
     width: 50%;
     margin-bottom: 40px;
   }
-  .create-own-profile-pic-col h3 {
-    font-size: 23px;
+  .create-own-profile-pic-col p {
+    font-size: 24px;
   }
   .create-own-profile-pic-col:nth-last-child(1) {
     margin-bottom: 0px;
@@ -1036,13 +1024,8 @@ ul {
     width: 70%;
     margin: auto;
   }
-  .create-own-profile-pic-col h3 {
-    margin-top: 15px;
-    font-size: 28px;
-  }
   .create-own-profile-pic-col p {
     margin: auto;
-    font-size: 16px;
   }
   .bib-partners-section {
     padding-bottom: 0px !important;
@@ -1060,9 +1043,9 @@ ul {
     top: 2%;
   }
   .team-member-card {
-    max-width: 360px;
+    max-width: 300px;
     margin: auto;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
   }
 }
 .mobile-menu {

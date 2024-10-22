@@ -285,6 +285,26 @@ document.querySelectorAll('.menu-link').forEach(link => {
     });
 });
 
+function toggleWowClass() {
+    const elements = document.querySelectorAll('.wow');
+    if (window.innerWidth < 768) {
+        elements.forEach(element => {
+            element.classList.remove('wow');
+        });
+    } 
+    // else {
+    //     elements.forEach(element => {
+    //         element.classList.add('wow');
+    //     });
+    // }
+}
+
+// Run on page load
+toggleWowClass();
+
+// Run on window resize
+window.addEventListener('resize', toggleWowClass);
+
 new WOW().init();
 
 
