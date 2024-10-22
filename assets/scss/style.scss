@@ -24,8 +24,9 @@ body {
     // background-repeat: no-repeat;
     // background-position: top center;
     background: linear-gradient(180deg, #4A6CDA 0%, #54A7D9 100%);
-    min-height: 100vh;
+    // min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: scroll !important;
     .container{
         position: relative;
     }
