@@ -20,10 +20,7 @@ body {
 }
 
 .body-continer {
-  background: url(../images/maib-bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
+  background: linear-gradient(180deg, #4A6CDA 0%, #54A7D9 100%);
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -68,8 +65,14 @@ ul {
 }
 
 .header-section {
-  background: #101033;
+  padding-top: 20px;
   transition: 0.3s;
+}
+.header-section .header-inner {
+  background: #101033;
+  border-radius: 60px;
+  padding: 10px 20px;
+  transition: 0.5s;
 }
 .header-section.sticky {
   position: fixed;
@@ -77,10 +80,11 @@ ul {
   top: 0;
   left: 0;
   z-index: 999;
+}
+.header-section.sticky .header-inner {
   background: rgba(16, 16, 51, 0.9);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  transition: 0.5s;
 }
 .header-section.sticky .header-inner .logo {
   max-width: 60px;
@@ -90,7 +94,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0px;
   gap: 30px;
   transition: 0.5s;
 }
@@ -127,6 +130,12 @@ ul {
   position: relative;
   z-index: 1;
 }
+.banner-section .cloud-1 {
+  position: absolute;
+  left: -20px;
+  width: 15%;
+  top: 50px;
+}
 
 .banner-left {
   max-width: 100%;
@@ -157,6 +166,13 @@ ul {
   max-width: 530px;
   width: 100%;
   margin-left: auto;
+  position: relative;
+}
+.banner-img .cloud {
+  position: absolute;
+  top: 15%;
+  right: -20%;
+  width: 35% !important;
 }
 .banner-img img {
   width: 100%;
@@ -179,6 +195,12 @@ ul {
   background: linear-gradient(180deg, rgba(65, 80, 174, 0) 0%, rgba(65, 80, 174, 0.6) 25%, #4150AE 50%, rgba(65, 80, 174, 0.6) 75%, rgba(65, 80, 174, 0) 100%);
   padding: 60px 0px 120px 0px;
   margin-bottom: 120px;
+  position: relative;
+}
+.join-bib-section .rocket-img {
+  position: absolute;
+  top: -50%;
+  left: 0px;
 }
 .join-bib-section .shape {
   position: absolute;
@@ -190,11 +212,15 @@ ul {
 }
 
 .bib-social {
-  max-width: 750px;
+  max-width: 800px;
   width: 100%;
   margin: auto;
   position: relative;
   z-index: 1;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px 50px;
+  margin-top: 45px;
 }
 .bib-social ul {
   display: flex;
@@ -202,7 +228,7 @@ ul {
   justify-content: space-between;
 }
 .bib-social ul li {
-  width: 20%;
+  width: 17%;
 }
 .bib-social ul li a {
   display: flex;
@@ -235,7 +261,6 @@ ul {
 .crypto-cuties-section {
   padding-bottom: 60px;
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0.4) 75%, rgba(0, 0, 0, 0) 100%);
   padding-top: 60px;
 }
 .crypto-cuties-section .container {
