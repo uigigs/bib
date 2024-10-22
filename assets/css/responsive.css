@@ -27,6 +27,9 @@
   .banner-left h3 {
     font-size: 50px;
   }
+  .header-inner .logo {
+    width: 60px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .banner-section {
@@ -73,6 +76,15 @@
   }
 }
 @media only screen and (max-width: 992px) {
+  .header-inner .logo {
+    width: 60px;
+  }
+  .header-inner ul {
+    gap: 25px;
+  }
+  .header-inner ul li a {
+    font-size: 16px;
+  }
   .banner-left p {
     font-size: 24px;
   }
@@ -108,6 +120,9 @@
   }
 }
 @media only screen and (max-width: 768px) {
+  .header-2 .header-inner {
+    padding: 4px 20px;
+  }
   .header-2 .header-inner .menu-list {
     display: none;
   }
@@ -263,6 +278,9 @@
   .footer-social .footer-social-title h2 {
     transform: translateY(-4px);
   }
+  .bib-social {
+    padding: 20px 35px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .footer-social {
@@ -270,6 +288,9 @@
   }
   .footer-social h2 {
     font-size: 16px;
+  }
+  .bib-social {
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 375px) {

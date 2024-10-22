@@ -38,6 +38,12 @@
             font-size: 50px;
         }
     }
+
+    .header-inner {
+        .logo{
+            width: 60px;
+        }
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -104,6 +110,19 @@
 }
 
 @media only screen and (max-width: 992px) {
+    .header-inner {
+        .logo{
+            width: 60px;
+        }
+        ul {
+            gap: 25px;
+            li{
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
     .banner-left p {
         font-size: 24px;
     }
@@ -160,6 +179,7 @@
 @media only screen and (max-width: 768px) {
     .header-2{
         .header-inner {
+            padding: 4px 20px;
             .menu-list{
                 display: none;
             }
@@ -373,6 +393,9 @@
             }
         }
     }
+    .bib-social{
+        padding: 20px 35px;
+    }
 
 }
 
@@ -383,6 +406,9 @@
         h2 {
             font-size: 16px;
         }
+    }
+    .bib-social{
+        padding: 20px;
     }
 }
 
