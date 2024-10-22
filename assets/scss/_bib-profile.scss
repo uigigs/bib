@@ -80,6 +80,25 @@
 }
 .create-own-profile-pic{
     padding-bottom: 78px;
+    position: relative;
+    .coin1{
+        width: 7%;
+        position: absolute;
+        top: 20px;
+        left: 5%;
+    }
+    .coin2{
+        width: 7%;
+        position: absolute;
+        top: 35%;
+        right: 5%;
+    }
+    .coin3{
+        width: 7%;
+        position: absolute;
+        bottom: 20%;
+        left: -4%;
+    }
     .section-title{
         // max-width: 400px;
         // margin: auto;
@@ -124,6 +143,13 @@
 .bib-partners-section{
     padding-bottom: 50px;
     position: relative;
+    .partners-bg-shape{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 40%;
+        left: 0px;
+    }
     .profile-cloud{
         &-1{
             position: absolute;
@@ -231,6 +257,18 @@
 
 .bib-team-section{
     padding: 50px 0px;
+    position: relative;
+    .coin-bib-img{
+        position: absolute;
+        top: -10%;
+        right: -20%;
+    }
+    .team-coin{
+        position: absolute;
+        top: 12%;
+        left: -4%;
+        width: 7%;
+    }
 } 
 .team-img{
     position: relative;

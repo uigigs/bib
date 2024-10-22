@@ -109,6 +109,7 @@ ul {
   align-items: center;
   justify-content: flex-end;
   gap: 35px;
+  padding-right: 30px;
 }
 .header-inner ul li a {
   display: flex;
@@ -192,7 +193,6 @@ ul {
 }
 
 .join-bib-section {
-  background: linear-gradient(180deg, rgba(65, 80, 174, 0) 0%, rgba(65, 80, 174, 0.6) 25%, #4150AE 50%, rgba(65, 80, 174, 0.6) 75%, rgba(65, 80, 174, 0) 100%);
   padding: 60px 0px 120px 0px;
   margin-bottom: 120px;
   position: relative;
@@ -200,7 +200,7 @@ ul {
 .join-bib-section .rocket-img {
   position: absolute;
   top: -50%;
-  left: 0px;
+  left: -20%;
 }
 .join-bib-section .shape {
   position: absolute;
@@ -314,6 +314,7 @@ ul {
 }
 .crypto-cuties-section .crypto-cuties-right ul {
   margin-top: 30px;
+  padding-left: 20px;
 }
 .crypto-cuties-section .crypto-cuties-right ul li {
   font-size: 28px;
@@ -323,6 +324,18 @@ ul {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+.crypto-cuties-section .crypto-cuties-right ul li::after {
+  content: "";
+  left: 0px;
+  top: 20px;
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background: #FFFFFF;
 }
 .crypto-cuties-section .crypto-cuties-right ul li .icon {
   display: flex;
@@ -395,6 +408,12 @@ ul {
   position: relative;
   z-index: 0;
 }
+.bib-footer .footer-ship {
+  position: absolute;
+  right: -30%;
+  bottom: 0;
+  z-index: 0;
+}
 
 .driving-img {
   width: 100%;
@@ -405,6 +424,7 @@ ul {
   align-items: center;
   justify-content: flex-start;
   position: absolute;
+  z-index: 1;
   width: 100%;
   bottom: 100px;
 }
@@ -522,6 +542,25 @@ ul {
 
 .create-own-profile-pic {
   padding-bottom: 78px;
+  position: relative;
+}
+.create-own-profile-pic .coin1 {
+  width: 7%;
+  position: absolute;
+  top: 20px;
+  left: 5%;
+}
+.create-own-profile-pic .coin2 {
+  width: 7%;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+.create-own-profile-pic .coin3 {
+  width: 7%;
+  position: absolute;
+  bottom: 20%;
+  left: -4%;
 }
 .create-own-profile-pic .section-title {
   margin-bottom: 50px;
@@ -564,6 +603,13 @@ ul {
 .bib-partners-section {
   padding-bottom: 50px;
   position: relative;
+}
+.bib-partners-section .partners-bg-shape {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 40%;
+  left: 0px;
 }
 .bib-partners-section .profile-cloud-1 {
   position: absolute;
@@ -670,6 +716,18 @@ ul {
 }
 .bib-team-section {
   padding: 50px 0px;
+  position: relative;
+}
+.bib-team-section .coin-bib-img {
+  position: absolute;
+  top: -10%;
+  right: -20%;
+}
+.bib-team-section .team-coin {
+  position: absolute;
+  top: 12%;
+  left: -4%;
+  width: 7%;
 }
 
 .team-img {

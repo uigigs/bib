@@ -110,6 +110,7 @@ ul {
         align-items: center;
         justify-content: flex-end;
         gap: 35px;
+        padding-right: 30px;
         li{
             a{
                 display: flex;
@@ -191,14 +192,14 @@ ul {
 }
 .join-bib-section{
     // background: rgba(65, 80, 174, 0.8);
-    background: linear-gradient(180deg, rgba(65, 80, 174, 0.00) 0%, rgba(65, 80, 174, 0.60) 25%, #4150AE 50%, rgba(65, 80, 174, 0.60) 75%, rgba(65, 80, 174, 0.00) 100%);
+    // background: linear-gradient(180deg, rgba(65, 80, 174, 0.00) 0%, rgba(65, 80, 174, 0.60) 25%, #4150AE 50%, rgba(65, 80, 174, 0.60) 75%, rgba(65, 80, 174, 0.00) 100%);
     padding: 60px 0px 120px 0px;
     margin-bottom: 120px;
     position: relative;
     .rocket-img{
         position: absolute;
         top: -50%;
-        left: 0px;
+        left: -20%;
     }
     .shape{
         position: absolute;
@@ -312,6 +313,7 @@ margin-top: 45px;
         }
         ul{
             margin-top: 30px;
+            padding-left: 20px;
             li{
                 font-size: 28px;
                 line-height: 150%;
@@ -320,6 +322,18 @@ margin-top: 45px;
                 align-items: center;
                 justify-content: flex-start;
                 gap: 10px;
+                padding-left: 25px;
+                position: relative;
+                &::after{
+                    content: '';
+                    left: 0px;
+                    top: 20px;
+                    position: absolute;
+                    height: 7px;
+                    width: 7px;
+                    border-radius: 50%;
+                    background: #FFFFFF;
+                }
                 .icon{
                     // position: absolute;
                     // top: 0;
@@ -395,6 +409,12 @@ margin-top: 45px;
 .bib-footer{
     position: relative;
     z-index: 0;
+    .footer-ship{
+        position: absolute;
+        right: -30%;
+        bottom: 0;
+        z-index: 0;
+    }
 }
 .driving-img{
     width: 100%;
@@ -406,6 +426,7 @@ margin-top: 45px;
     align-items: center;
     justify-content: flex-start;
     position: absolute;
+    z-index: 1;
     width: 100%;
     bottom: 100px;
     .footer-bib-img{

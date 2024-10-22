@@ -34,34 +34,37 @@
                             aria-label="Toggle navigation" fdprocessedid="7fbgmc">
                             <img src="./assets/images/menu.png" alt="icon">
                         </button>
-                        <div class="offcanvas offcanvas-end mobile-menu-body" tabindex="-1" id="offcanvasNavbar"
-                            aria-labelledby="offcanvasNavbarLabel">
-                            <div class="offcanvas-header">
-                                <a href="./index.html" class="mobile-menu-logo" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"><img src="./assets/images/profile/profile-logo.png"
-                                        alt="logo"></a>
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                                    <img src="./assets/images/close.png" alt="icon">
-                                </button>
-                            </div>
-                            <div class="offcanvas-body">
-                                <ol class="navbar-nav justify-content-end flex-grow-1 pe-3 mobile-menu-list">
-                                    <li><a href="#Home" data-bs-dismiss="offcanvas" aria-label="Close">Home</a></li>
-                                    <li><a href="#JoinUs" data-bs-dismiss="offcanvas" aria-label="Close">Join Us</a>
-                                    </li>
-                                    <li><a href="#Partners" data-bs-dismiss="offcanvas" aria-label="Close">Partners</a>
-                                    </li>
-                                    <li><a href="#Profile" data-bs-dismiss="offcanvas" aria-label="Close">Profile</a>
-                                    </li>
-                                    <li><a href="#Tokenomics" data-bs-dismiss="offcanvas"
-                                            aria-label="Close">Tokenomics</a></li>
-                                </ol>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </header>
+        <!-- mobile-menu-drawer -->
+        <div class="mobile-menu">
+            <div class="offcanvas offcanvas-end mobile-menu-body" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a href="./index.html" class="mobile-menu-logo" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><img src="./assets/images/profile/profile-logo.png"
+                            alt="logo"></a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img src="./assets/images/close.png" alt="icon">
+                    </button>
+                </div>
+                <div class="offcanvas-body">
+                    <ol class="navbar-nav justify-content-end flex-grow-1 pe-3 mobile-menu-list">
+                        <li><a href="#Home" data-bs-dismiss="offcanvas" aria-label="Close">Home</a></li>
+                        <li><a href="#JoinUs" data-bs-dismiss="offcanvas" aria-label="Close">Join Us</a>
+                        </li>
+                        <li><a href="#Partners" data-bs-dismiss="offcanvas" aria-label="Close">Partners</a>
+                        </li>
+                        <li><a href="#Profile" data-bs-dismiss="offcanvas" aria-label="Close">Profile</a>
+                        </li>
+                        <li><a href="#Tokenomics" data-bs-dismiss="offcanvas"
+                                aria-label="Close">Tokenomics</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
         <!-- header section end -->
 
         <!-- Banner section start -->
@@ -128,6 +131,7 @@
 
         <!-- bib-partners start -->
         <section class="bib-partners-section pb-5" id="Partners">
+            <img src="./assets/images/partners-bg-shape.png" alt="img" class="partners-bg-shape">
             <img src="./assets/images/profile/cloud-1.png" alt="shape" class="profile-cloud-1">
             <img src="./assets/images/profile/cloud-2.png" alt="shape" class="profile-cloud-2">
             <img src="./assets/images/profile/cloud-3.png" alt="shape" class="profile-cloud-3">
@@ -181,6 +185,9 @@
 
         <!-- bib-profile-profile-pic start -->
         <section class="create-own-profile-pic pt-0 pt-lg-5" id="Profile">
+            <img src="./assets/images/coin-1.png" alt="coin" class="coin1 jumpingDown">
+            <img src="./assets/images/coin-2.png" alt="coin" class="coin2 jumpingUp">
+            <img src="./assets/images/coin-2.png" alt="coin" class="coin3 profile-coin3">
             <div class="container">
                 <h2 class="section-title text-center title-shadow uppercase">Create Your Profile Picture
                 </h2>
@@ -216,9 +223,9 @@
 
         <!-- meet section start -->
         <section class="crypto-cuties-section" id="Tokenomics">
-            <img src="./assets/images/cloud1.png" alt="shape" class="cloud1">
-            <img src="./assets/images/cloud2.png" alt="shape" class="cloud2">
-            <img src="./assets/images/balls2.png" alt="img" class="shape">
+            <!-- <img src="./assets/images/cloud1.png" alt="shape" class="cloud1">
+            <img src="./assets/images/cloud2.png" alt="shape" class="cloud2"> -->
+            <!-- <img src="./assets/images/balls2.png" alt="img" class="shape"> -->
             <div class="container">
                 <h2 class="section-title text-center title-shadow uppercase">MEET OUR "CRYPTO CUTIES"</h2>
                 <div class="row">
@@ -233,14 +240,10 @@
                                 will approach him. Be like BIB.</p>
                             <p class="mt-3 cuties-warning"><span>🛑</span>WARNING: Only real women wear a bathrobe!</p>
                             <ul>
-                                <li><span class="icon"><img src="./assets/images/check_icon.png" alt="icon"></span> Cute
-                                </li>
-                                <li><span class="icon"><img src="./assets/images/check_icon.png" alt="icon"></span>
-                                    Smart</li>
-                                <li><span class="icon"><img src="./assets/images/check_icon.png" alt="icon"></span> Sexy
-                                </li>
-                                <li><span class="icon"><img src="./assets/images/check_icon.png" alt="icon"></span>
-                                    Bathrobe</li>
+                                <li>Cute</li>
+                                <li>Smart</li>
+                                <li>Sexy</li>
+                                <li>Bathrobe</li>
                             </ul>
                         </div>
                     </div>
@@ -251,6 +254,8 @@
 
         <!-- bib-team start -->
         <section class="bib-team-section">
+            <img src="./assets/images/coin-bib.png" alt="coin" class="coin-bib-img">
+            <img src="./assets/images/coin-1.png" alt="coin" class="coin team-coin">
             <div class="container">
                 <h2 class="section-title text-center title-shadow uppercase pb-4">Team Members</h2>
                 <div class="row">
@@ -318,12 +323,12 @@
                             </div>
                             <div class="team-member-detail">
                                 <h4 class="name">Van Gogh BIB</h4>
-                                <h6 class="designation">Artist</h6>
+                                <h6 class="designation">2D Artist</h6>
                                 <a href="#" class="about-btn" data-bs-toggle="modal" 
                                    data-bs-target="#teamPopup"
                                    data-img="./assets/images/profile/t_img_4.png"
                                    data-name="Van Gogh BIB"
-                                   data-designation="Artist"
+                                   data-designation="2D Artist"
                                    data-description="Previously worked for major brands like Disney, Nickelodeon, Cartoon Network, and Pixar Studios. He is now ready to apply his knowledge to the designs of the BIB artwork. Expect high-quality designs made with love.">
                                     More About
                                 </a>
@@ -414,7 +419,7 @@
                         <h2 class="section-title uppercase title-shadow">Start Cooking with bib</h2>
                     </div>
 
-                    <div class="bib-social pt-4">
+                    <div class="bib-social pt-4 px-0 bg-transparent">
                         <ul>
                             <li><a href="#"><img src="./assets/images/social1.png" alt="icon"></a></li>
                             <li><a href="#"><img src="./assets/images/social2.png" alt="icon"></a></li>
@@ -422,8 +427,11 @@
                             <li><a href="#"><img src="./assets/images/social4.png" alt="icon"></a></li>
                         </ul>
                     </div>
+
+                    
                 </div>
             </div>
+            <img src="./assets/images/footer-ship.png" alt="img" class="footer-ship">
         </section>
         <!-- bib footer section end -->
 
