@@ -30,6 +30,12 @@
   .header-inner .logo {
     width: 60px;
   }
+  .join-bib-section .rocket-img {
+    max-width: 350px;
+  }
+  .bib-team-section .coin-bib-img {
+    max-width: 350px;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .banner-section {
@@ -100,6 +106,12 @@
   .crypto-cuties-section .crypto-cuties-right ul li .icon {
     width: 25px;
     height: auto;
+  }
+  .join-bib-section .rocket-img {
+    display: none;
+  }
+  .bib-team-section .coin-bib-img {
+    display: none;
   }
   .bib-walk-section {
     padding-top: 20px;

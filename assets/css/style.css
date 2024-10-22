@@ -65,7 +65,7 @@ ul {
 }
 
 .header-section {
-  padding-top: 20px;
+  padding-top: 15px;
   transition: 0.3s;
 }
 .header-section .header-inner {
@@ -216,8 +216,7 @@ ul {
 .join-bib-section .rocket-img {
   position: absolute;
   top: -50%;
-  left: -20%;
-  width: 42%;
+  left: -10%;
 }
 .join-bib-section .shape {
   position: absolute;
@@ -366,7 +365,7 @@ ul {
 }
 .bib-walk-section .cloud4 {
   position: absolute;
-  bottom: -12%;
+  bottom: -13%;
   left: 0px;
   width: 100%;
   z-index: 1;
@@ -415,9 +414,9 @@ ul {
 }
 .bib-footer .footer-ship {
   position: absolute;
-  width: 43%;
   right: -4%;
   bottom: 0;
+  width: 46%;
   z-index: 0;
 }
 
@@ -727,8 +726,7 @@ ul {
 .bib-team-section .coin-bib-img {
   position: absolute;
   top: -10%;
-  right: -20%;
-  width: 40%;
+  right: -10%;
 }
 .bib-team-section .team-coin {
   position: absolute;

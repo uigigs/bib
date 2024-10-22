@@ -277,6 +277,14 @@ if (footerShip.length) {
     });
 }
 
+document.querySelectorAll('.menu-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const offcanvas = document.getElementById('offcanvasNavbar');
+        const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas); // Get Bootstrap Offcanvas instance
+        bsOffcanvas.hide(); // Manually hide the offcanvas
+    });
+});
+
 new WOW().init();
 
 
