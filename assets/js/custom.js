@@ -277,5 +277,7 @@ if (footerShip.length) {
     });
 }
 
+new WOW().init();
+
 
 })(jQuery);

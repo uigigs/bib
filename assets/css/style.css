@@ -88,6 +88,7 @@ ul {
 }
 .header-section.sticky .header-inner .logo {
   max-width: 60px;
+  animation: haderLogoAnimetion 0.4s;
 }
 
 .header-inner {
@@ -95,14 +96,13 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  transition: 0.5s;
 }
 .header-inner .logo {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100px;
-  transition: 0.5s;
+  animation: haderLogoAnimetionRevarse 0.4s;
 }
 .header-inner ul {
   display: flex;
@@ -126,6 +126,22 @@ ul {
   color: #FFFFFF;
 }
 
+@keyframes haderLogoAnimetion {
+  0% {
+    max-width: 100px;
+  }
+  100% {
+    max-width: 60px;
+  }
+}
+@keyframes haderLogoAnimetionRevarse {
+  0% {
+    max-width: 60px;
+  }
+  100% {
+    max-width: 100px;
+  }
+}
 .banner-section {
   padding: 120px 0px;
   position: relative;
@@ -304,7 +320,7 @@ ul {
 }
 .crypto-cuties-section .crypto-cuties-right p {
   font-size: 28px;
-  line-height: 130%;
+  line-height: 150%;
   max-width: 515px;
 }
 .crypto-cuties-section .crypto-cuties-right p.cuties-warning {
@@ -319,24 +335,12 @@ ul {
 }
 .crypto-cuties-section .crypto-cuties-right ul li {
   font-size: 28px;
-  line-height: 150%;
+  line-height: 170%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  padding-left: 25px;
-  position: relative;
-}
-.crypto-cuties-section .crypto-cuties-right ul li::after {
-  content: "";
-  left: 0px;
-  top: 20px;
-  position: absolute;
-  height: 7px;
-  width: 7px;
-  border-radius: 50%;
-  background: #FFFFFF;
 }
 .crypto-cuties-section .crypto-cuties-right ul li .icon {
   display: flex;
@@ -412,7 +416,7 @@ ul {
 .bib-footer .footer-ship {
   position: absolute;
   width: 43%;
-  right: -15%;
+  right: -4%;
   bottom: 0;
   z-index: 0;
 }
@@ -610,7 +614,7 @@ ul {
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 40%;
+  top: 46%;
   left: 0px;
 }
 .bib-partners-section .profile-cloud-1 {

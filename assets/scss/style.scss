@@ -88,6 +88,7 @@ ul {
             backdrop-filter: blur(5px);
             .logo{
                 max-width: 60px;
+                animation: haderLogoAnimetion 0.4s;
             }
         }
     }
@@ -97,13 +98,12 @@ ul {
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    transition: 0.5s;
     .logo{
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100px;
-        transition: 0.5s;
+        animation: haderLogoAnimetionRevarse 0.4s;
     }
     ul{
         display: flex;
@@ -129,6 +129,24 @@ ul {
         }
     }
 }
+
+@keyframes haderLogoAnimetion {
+    0% {
+        max-width: 100px;
+    }
+    100% {
+        max-width: 60px;
+    }
+  }
+@keyframes haderLogoAnimetionRevarse {
+    0% {
+        max-width: 60px;
+    }
+    100% {
+        max-width: 100px;
+    }
+  }
+
 .banner-section{
     padding: 120px 0px;
     position: relative;
@@ -303,7 +321,7 @@ margin-top: 45px;
         margin-top: 30px;
         p{
             font-size: 28px;
-            line-height: 130%;
+            line-height: 150%;
             max-width: 515px;
             &.cuties-warning{
                 display: flex;
@@ -317,24 +335,24 @@ margin-top: 45px;
             padding-left: 20px;
             li{
                 font-size: 28px;
-                line-height: 150%;
+                line-height: 170%;
                 position: relative;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
                 gap: 10px;
-                padding-left: 25px;
-                position: relative;
-                &::after{
-                    content: '';
-                    left: 0px;
-                    top: 20px;
-                    position: absolute;
-                    height: 7px;
-                    width: 7px;
-                    border-radius: 50%;
-                    background: #FFFFFF;
-                }
+                // padding-left: 25px;
+                // position: relative;
+                // &::after{
+                //     content: '';
+                //     left: 0px;
+                //     top: 20px;
+                //     position: absolute;
+                //     height: 7px;
+                //     width: 7px;
+                //     border-radius: 50%;
+                //     background: #FFFFFF;
+                // }
                 .icon{
                     // position: absolute;
                     // top: 0;
@@ -413,7 +431,7 @@ margin-top: 45px;
     .footer-ship{
         position: absolute;
         width: 43%;
-        right: -15%;
+        right: -4%;
         bottom: 0;
         z-index: 0;
     }
