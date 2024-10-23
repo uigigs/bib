@@ -9,6 +9,23 @@
     padding-bottom: 0px !important;
     text-align: center;
 }
+.bib-profile-banner-content{
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .banner-car-light{
+        position: absolute;
+        top: -22%;
+    }
+    .profile-logo{
+        position: absolute;
+        bottom: 20px;
+        max-width: 70px;
+    }
+}
 .profile-logo{
     margin: auto;
     max-width: 220px;
@@ -18,6 +35,8 @@
 }
 .profile-banner-img{
     margin: auto;
+    position: relative;
+    z-index: 0;
 }
 .profile-banner-video{
     position: relative;
@@ -78,6 +97,42 @@
     font-weight: 400;
     line-height: 112.5%;
 }
+
+.ship-section{
+    padding-top: 70px;
+    padding-bottom: 300px;
+    position: relative;
+    .ship-bg-img{
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        top: -40px;
+        img{
+            width: 100%;
+        }
+    }
+    .ship-text{
+        border-radius: 70px;
+        background: #FFF;
+        max-width: 800px;
+        padding: 40px 5px;
+        position: relative;
+        z-index: 1;
+        h3{
+            color: #FDCB1C;
+            text-align: center;
+            text-shadow: 2px 5px 0px #000;
+            font-family: Chewy;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+
+    }
+}
+
+
 .create-own-profile-pic{
     padding-bottom: 78px;
     position: relative;
