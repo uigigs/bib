@@ -33,24 +33,7 @@
 }
 
 @media only screen and (max-width: 1800px) {
-    .ship-section {
-        .ship-text {
-            max-width: 750px;
-            padding: 25px 20px;
-            max-width: 725px;
-            h3{
-                font-size: 40px;
-            }
-            &::after{
-                height: 50px;
-                width: 50px;
-            }
-            &::before{
-                height: 28px;
-                width: 28px;
-            }
-        }
-    }
+   
 }
 @media only screen and (max-width: 1400px) {
     .banner-left {
@@ -71,25 +54,10 @@
         }
     }
 
-    .bib-team-section {
-        .coin-bib-img {
-            max-width: 350px;
-        }
+    .coin-bib-img {
+        max-width: 350px;
     }
 
-
-    .ship-section {
-        padding-bottom: 16%;
-        .ship-bg-img{
-            top: 0;
-        }
-        .ship-text {
-            max-width: 675px;
-            h3{
-                font-size: 40px;
-            }
-        }
-    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -150,18 +118,16 @@
         }
     }
 
+
     .ship-section {
-        .ship-text{
-            max-width: 52%;
-            &::before {
-                right: -33%;
-                bottom: auto;
-                top: 55%;
-            }
-            &::after {
-                right: -18%;
-                bottom: auto;
-                top: 40%;
+        .ship-text {
+            max-width: 500px;
+            margin: auto;
+            min-height: 200px;
+            padding-left: 50px;
+            h3 {
+                font-size: 32px;
+                max-width: 300px;
             }
         }
     }
@@ -218,10 +184,8 @@
         }
     }
 
-    .bib-team-section {
-        .coin-bib-img {
-            display: none;
-        }
+    .coin-bib-img {
+        display: none;
     }
 
     .section-title {
@@ -292,6 +256,15 @@
 
     .banner-section {
         padding: 60px 0px 0px 0px;
+    }
+    .banner-right{
+        padding-bottom: 70px;
+    }
+    .banner-img {
+        margin-bottom: 80px;
+        .cloud{
+            right: 0;
+        }
     }
 
     .join-bib-section {
@@ -428,19 +401,18 @@
         }
     }
 
+    .bib-social{
+        margin-top: 20px;
+    }
 
     .ship-section {
         .ship-text {
+            max-width: 390px;
+            min-height: 150px;
+            padding-left: 10%;
             h3{
-                font-size: 28px;
-            }
-            &::after{
-                height: 30px;
-                width: 30px;
-            }
-            &::before{
-                height: 20px;
-                width: 20px;
+                font-size: 24px;
+                max-width: 218px;
             }
         }
     }
@@ -516,6 +488,7 @@
     .bib-social {
         padding: 20px 35px;
     }
+
 
 }
 

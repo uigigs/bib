@@ -22,8 +22,29 @@
     }
     .profile-logo{
         position: absolute;
-        bottom: 20px;
-        max-width: 70px;
+        bottom: 2.5%;
+        max-width: 6.5%;
+    }
+}
+.bib-profile-banner-text{
+    max-width: 565px;
+    margin: auto;
+    margin-bottom: 17px;
+    position: relative;
+    z-index: 1;
+    h2{
+        color: #FFF;
+        text-align: center;
+        text-shadow: 2px 3px 0px #000;
+        font-family: "Concert One";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 107.143%;
+        letter-spacing: -1.4px;
+        span{
+            color: #FDCB1B;
+        }
     }
 }
 .profile-logo{
@@ -100,7 +121,7 @@
 
 .ship-section{
     padding-top: 70px;
-    padding-bottom: 300px;
+    padding-bottom: 2%;
     position: relative;
     .ship-bg-img{
         width: 100%;
@@ -112,14 +133,20 @@
         }
     }
     .ship-text{
-        border-radius: 70px;
-        background: #FFF;
-        max-width: 800px;
-        padding: 40px 5px;
+        background: url(../images/talk-cloud-bg.png);
+        background-size: 100% 100%;
+        background-position: center center;
         position: relative;
         z-index: 1;
+        max-width: 720px;
+        margin: auto;
+        min-height: 290px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 100px;
         h3{
-            color: #FDCB1C;
+            color: #FFF;
             text-align: center;
             text-shadow: 2px 5px 0px #000;
             font-family: Chewy;
@@ -127,26 +154,8 @@
             font-style: normal;
             font-weight: 400;
             line-height: 130%;
-        }
-        &::after{
-            content: '';
-            height: 73px;
-            width: 73px;
-            border-radius: 500%;
-            background: #FFFFFF;
-            position: absolute;
-            right: -9%;
-            bottom: -30%;
-        }
-        &::before{
-            content: '';
-            height: 42px;
-            width: 42px;
-            border-radius: 500%;
-            background: #FFFFFF;
-            position: absolute;
-            right: -15%;
-            bottom: -50%;
+            max-width: 380px;
+            width: 100%;
         }
 
     }
@@ -595,6 +604,12 @@
             max-width: 400px;
         }
     }
+    .bib-profile-banner-text{
+        max-width: 400px;
+        h2{
+            font-size: 50px;
+        }
+    }
     // .create-own-profile-pic-col {
         // h3{
         //     font-size: 20px;
@@ -666,6 +681,12 @@
 }
 
 @media only screen and (max-width: 575px){
+    .bib-profile-banner-text {
+        max-width: 380px;
+        h2{
+            font-size: 40px;
+        }
+    }
     .create-own-profile-pic{
         &-col{
             text-align: center;

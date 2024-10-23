@@ -218,7 +218,7 @@ ul {
 .join-bib-section{
     // background: rgba(65, 80, 174, 0.8);
     // background: linear-gradient(180deg, rgba(65, 80, 174, 0.00) 0%, rgba(65, 80, 174, 0.60) 25%, #4150AE 50%, rgba(65, 80, 174, 0.60) 75%, rgba(65, 80, 174, 0.00) 100%);
-    padding: 60px 0px 120px 0px;
+    padding: 80px 0px 0px 0px;
     margin-bottom: 120px;
     position: relative;
     .rocket-img{
@@ -288,6 +288,11 @@ margin-top: 45px;
     // background-color: rgb(0, 0, 0, 0.4);
     // background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 25%, rgba(0, 0, 0, 0.40) 75%, rgba(0, 0, 0, 0.00) 100%);
     padding-top: 60px;
+    .coin-bib-img{
+        position: absolute;
+        top: -10%;
+        right: -20%;
+    }
     .container{
         z-index: 1;
     }
