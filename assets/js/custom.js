@@ -1,16 +1,16 @@
 (function ($) {
 /*-- sticky header scripts start --*/
-$(window).on('scroll', function () {
-    if ($(window).width() > 768) { // Only apply for screens wider than 768px
-        if ($(this).scrollTop() > 20) {
-            $('.header-section').addClass("sticky");
-        } else {
-            $('.header-section').removeClass("sticky");
-        }
-    } else {
-        $('.header-section').removeClass("sticky"); // Remove sticky if screen is smaller
-    }
-});
+// $(window).on('scroll', function () {
+//     if ($(window).width() > 768) { // Only apply for screens wider than 768px
+//         if ($(this).scrollTop() > 20) {
+//             $('.header-section').addClass("sticky");
+//         } else {
+//             $('.header-section').removeClass("sticky");
+//         }
+//     } else {
+//         $('.header-section').removeClass("sticky"); // Remove sticky if screen is smaller
+//     }
+// });
 /*-- sticky header scripts end --*/
 
 

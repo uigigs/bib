@@ -131,20 +131,7 @@
   }
   .body-container {
     max-height: 100vh;
-    padding-top: 85px;
     overflow-y: scroll !important;
-  }
-  .header-section {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999;
-  }
-  .header-section .header-inner {
-    background: rgba(16, 16, 51, 0.9);
-    -webkit-backdrop-filter: blur(5px);
-            backdrop-filter: blur(5px);
   }
   .header-2 .header-inner {
     padding: 4px 20px;
