@@ -40,17 +40,19 @@
     }
 
     .header-inner {
-        .logo{
+        .logo {
             width: 60px;
         }
     }
+
     .join-bib-section {
-        .rocket-img{
+        .rocket-img {
             max-width: 350px;
         }
     }
+
     .bib-team-section {
-        .coin-bib-img{
+        .coin-bib-img {
             max-width: 350px;
         }
     }
@@ -118,18 +120,21 @@
 
 @media only screen and (max-width: 992px) {
     .header-inner {
-        .logo{
+        .logo {
             width: 60px;
         }
+
         ul {
             gap: 25px;
-            li{
-                a{
+
+            li {
+                a {
                     font-size: 16px;
                 }
             }
         }
     }
+
     .banner-left p {
         font-size: 24px;
     }
@@ -158,12 +163,13 @@
     }
 
     .join-bib-section {
-        .rocket-img{
+        .rocket-img {
             display: none;
         }
     }
+
     .bib-team-section {
-        .coin-bib-img{
+        .coin-bib-img {
             display: none;
         }
     }
@@ -183,7 +189,8 @@
         .footer-social-title {
             max-width: 365px;
             min-height: 85px;
-            .section-title{
+
+            .section-title {
                 font-size: 28px;
             }
         }
@@ -191,18 +198,42 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .header-2{
+    body {
+        overflow: hidden;
+    }
+
+    .body-container {
+        max-height: 100vh;
+        padding-top: 85px;
+        overflow-y: scroll !important;
+    }
+
+    .header-section {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        .header-inner{
+            background: rgba(16, 16, 51, 0.9);
+            backdrop-filter: blur(5px);
+        }
+    }
+
+    .header-2 {
         .header-inner {
             padding: 4px 20px;
-            .menu-list{
+
+            .menu-list {
                 display: none;
             }
-            .logo{
+
+            .logo {
                 max-width: 60px;
             }
         }
     }
-    
+
 
     .banner-section {
         padding: 60px 0px 0px 0px;
@@ -267,6 +298,7 @@
 
     .crypto-cuties-section {
         padding-top: 30px;
+
         .crypto-cuties-left {
             max-width: 400px;
             margin: auto;
@@ -408,7 +440,8 @@
             }
         }
     }
-    .bib-social{
+
+    .bib-social {
         padding: 20px 35px;
     }
 
@@ -422,22 +455,24 @@
             font-size: 16px;
         }
     }
-    .bib-social{
+
+    .bib-social {
         padding: 20px;
     }
 }
 
 @media only screen and (max-width: 375px) {
 
-    .banner-left{
-        p{
-            &.banner-note{
-                span{
+    .banner-left {
+        p {
+            &.banner-note {
+                span {
                     left: 10px;
                 }
             }
         }
     }
+
     .coming-soon-content {
         h2 {
             font-size: 23px;
