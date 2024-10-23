@@ -32,6 +32,26 @@
 
 }
 
+@media only screen and (max-width: 1800px) {
+    .ship-section {
+        .ship-text {
+            max-width: 750px;
+            padding: 25px 20px;
+            max-width: 725px;
+            h3{
+                font-size: 40px;
+            }
+            &::after{
+                height: 50px;
+                width: 50px;
+            }
+            &::before{
+                height: 28px;
+                width: 28px;
+            }
+        }
+    }
+}
 @media only screen and (max-width: 1400px) {
     .banner-left {
         h3 {
@@ -54,6 +74,20 @@
     .bib-team-section {
         .coin-bib-img {
             max-width: 350px;
+        }
+    }
+
+
+    .ship-section {
+        padding-bottom: 16%;
+        .ship-bg-img{
+            top: 0;
+        }
+        .ship-text {
+            max-width: 675px;
+            h3{
+                font-size: 40px;
+            }
         }
     }
 }
@@ -113,6 +147,22 @@
             width: 100%;
             font-size: 27px;
             line-height: 130%;
+        }
+    }
+
+    .ship-section {
+        .ship-text{
+            max-width: 52%;
+            &::before {
+                right: -33%;
+                bottom: auto;
+                top: 55%;
+            }
+            &::after {
+                right: -18%;
+                bottom: auto;
+                top: 40%;
+            }
         }
     }
 
@@ -194,6 +244,11 @@
                 font-size: 28px;
             }
         }
+    }
+
+
+    .ship-section{
+        padding-top: 25px;
     }
 }
 
@@ -370,6 +425,23 @@
             text-align: center;
             margin: auto;
             margin-top: 30px;
+        }
+    }
+
+
+    .ship-section {
+        .ship-text {
+            h3{
+                font-size: 28px;
+            }
+            &::after{
+                height: 30px;
+                width: 30px;
+            }
+            &::before{
+                height: 20px;
+                width: 20px;
+            }
         }
     }
 }

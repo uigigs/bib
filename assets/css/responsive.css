@@ -23,6 +23,24 @@
     margin-bottom: 25px;
   }
 }
+@media only screen and (max-width: 1800px) {
+  .ship-section .ship-text {
+    max-width: 750px;
+    padding: 25px 20px;
+    max-width: 725px;
+  }
+  .ship-section .ship-text h3 {
+    font-size: 40px;
+  }
+  .ship-section .ship-text::after {
+    height: 50px;
+    width: 50px;
+  }
+  .ship-section .ship-text::before {
+    height: 28px;
+    width: 28px;
+  }
+}
 @media only screen and (max-width: 1400px) {
   .banner-left h3 {
     font-size: 50px;
@@ -35,6 +53,18 @@
   }
   .bib-team-section .coin-bib-img {
     max-width: 350px;
+  }
+  .ship-section {
+    padding-bottom: 16%;
+  }
+  .ship-section .ship-bg-img {
+    top: 0;
+  }
+  .ship-section .ship-text {
+    max-width: 675px;
+  }
+  .ship-section .ship-text h3 {
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -76,6 +106,19 @@
     width: 100%;
     font-size: 27px;
     line-height: 130%;
+  }
+  .ship-section .ship-text {
+    max-width: 52%;
+  }
+  .ship-section .ship-text::before {
+    right: -33%;
+    bottom: auto;
+    top: 55%;
+  }
+  .ship-section .ship-text::after {
+    right: -18%;
+    bottom: auto;
+    top: 40%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -123,6 +166,9 @@
   }
   .footer-social .footer-social-title .section-title {
     font-size: 28px;
+  }
+  .ship-section {
+    padding-top: 25px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -246,6 +292,17 @@
     text-align: center;
     margin: auto;
     margin-top: 30px;
+  }
+  .ship-section .ship-text h3 {
+    font-size: 28px;
+  }
+  .ship-section .ship-text::after {
+    height: 30px;
+    width: 30px;
+  }
+  .ship-section .ship-text::before {
+    height: 20px;
+    width: 20px;
   }
 }
 @media only screen and (max-width: 575px) {
