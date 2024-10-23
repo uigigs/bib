@@ -283,15 +283,13 @@ margin-top: 45px;
 
 
 .crypto-cuties-section{
-    padding-bottom: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     position: relative;
-    // background-color: rgb(0, 0, 0, 0.4);
-    // background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 25%, rgba(0, 0, 0, 0.40) 75%, rgba(0, 0, 0, 0.00) 100%);
-    padding-top: 60px;
     .coin-bib-img{
         position: absolute;
         top: -10%;
-        right: -20%;
+        right: -10%;
     }
     .container{
         z-index: 1;

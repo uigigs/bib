@@ -155,6 +155,9 @@
   .header-2 .header-inner .logo {
     max-width: 60px;
   }
+  .section-title {
+    font-size: 34px;
+  }
   .banner-section {
     padding: 60px 0px 0px 0px;
   }
@@ -340,6 +343,9 @@
   .ship-section .ship-text h3 {
     font-size: 18px;
     max-width: 180px;
+  }
+  .footer-social .footer-social-title .section-title {
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 480px) {

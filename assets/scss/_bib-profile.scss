@@ -120,8 +120,8 @@
 }
 
 .ship-section{
-    padding-top: 70px;
-    padding-bottom: 2%;
+    padding-top: 50px;
+    padding-bottom: 6%;
     position: relative;
     .ship-bg-img{
         width: 100%;
@@ -211,7 +211,7 @@
             font-weight: 400;
             letter-spacing: 0;
             line-height: 150%;
-            margin: 30px 0px 20px 0px;
+            margin: 20px 0px 10px 0px;
             text-shadow: 1.5px 3px 0px #000;
         }
         p{
@@ -265,7 +265,7 @@
     }
 }
 .bib-partners-logo{
-    margin-top: 60px;
+    margin-top: 40px;
     ul{
         display: flex;
         align-items: center;
@@ -658,7 +658,7 @@
         }
         &-col{
             width: 50%;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             // h3{
             //     font-size: 23px;
             // }
@@ -671,8 +671,15 @@
         }
     }
     .bib-partners-logo {
+        ul{
+            margin: 0px -12px;
+            li{
+                padding: 0px 12px;
+            }
+        }
         .partners-logo-card{
             height: 70px;
+            margin-bottom: 20px;
         }
     }
     .bib-partners-section{
@@ -695,10 +702,9 @@
                 width: 70%;
                 margin: auto;
             }
-            // h3{
-            //     margin-top: 15px;
-            //     font-size: 28px;
-            // }
+            h3{
+                margin-top: 10px;
+            }
             p{
                 margin: auto;
                 // font-size: 16px;
