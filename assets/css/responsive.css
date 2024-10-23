@@ -329,6 +329,18 @@
   .bib-social {
     padding: 20px 35px;
   }
+  .ship-section .ship-bg-img {
+    top: 0;
+  }
+  .ship-section .ship-text {
+    max-width: 276px;
+    min-height: 131px;
+    padding-left: 7%;
+  }
+  .ship-section .ship-text h3 {
+    font-size: 18px;
+    max-width: 180px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .footer-social {
