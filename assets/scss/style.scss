@@ -4,6 +4,9 @@
     padding: 0;
     margin: 0;
 }
+body, html {
+    overflow-x: hidden;
+  }
 
 body {
     padding: 0;
@@ -26,7 +29,7 @@ body {
     background: linear-gradient(180deg, #4A6CDA 0%, #54A7D9 100%);
     // min-height: 100vh;
     overflow-x: hidden;
-    overflow-y: scroll !important;
+    // overflow-y: scroll !important;
     .container{
         position: relative;
     }
@@ -437,6 +440,10 @@ margin-top: 45px;
 }
 .driving-img{
     width: 100%;
+    img{
+        max-width: 100vw;
+        width: 100%;
+    }
 }
 
 
