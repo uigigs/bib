@@ -139,12 +139,15 @@
         position: relative;
         z-index: 1;
         max-width: 720px;
-        margin: auto;
         min-height: 290px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         padding-left: 100px;
+        margin-right: 10%;
+        margin-left: auto;
+        transform: translateY(-12%);
+
         h3{
             color: #FFF;
             text-align: center;
@@ -699,7 +702,7 @@
             text-align: center;
             width: 100%;
             img{
-                width: 70%;
+                width: 180px;
                 margin: auto;
             }
             h3{
@@ -736,7 +739,7 @@
         }
     }
     .team-member-card{
-        max-width: 300px;
+        max-width: 250px;
         margin: auto;
         margin-bottom: 60px;
     }
