@@ -774,6 +774,10 @@ ul {
   height: 100%;
   width: 100%;
 }
+.bib-profile-footer-video iframe {
+  height: 540px !important;
+  width: 100% !important;
+}
 
 .jumpingDown {
   animation: jumpingDown 4.5s infinite;
@@ -1008,6 +1012,9 @@ ul {
     max-width: 90%;
     margin: auto;
   }
+  .bib-profile-footer-video iframe {
+    height: 430px !important;
+  }
   .create-own-profile-pic-content {
     margin: 0px -15px;
   }
@@ -1067,6 +1074,9 @@ ul {
   .bib-profile-banner-text h2 {
     font-size: 50px;
   }
+  .bib-profile-footer-video iframe {
+    height: 340px !important;
+  }
   .bib-partners-logo .partners-logo-card {
     padding: 10px 20px;
     height: 80px;
@@ -1114,6 +1124,9 @@ ul {
   .bib-partners-section {
     padding-bottom: 10px !important;
   }
+  .bib-profile-footer-video iframe {
+    height: 240px !important;
+  }
 }
 @media only screen and (max-width: 575px) {
   .bib-profile-banner-text {
@@ -1135,6 +1148,13 @@ ul {
   }
   .create-own-profile-pic-col p {
     margin: auto;
+  }
+  .bib-profile-footer-video {
+    max-width: 370px;
+    margin: auto;
+  }
+  .bib-profile-footer-video iframe {
+    height: 200px !important;
   }
   .bib-partners-section {
     padding-bottom: 0px !important;
