@@ -140,20 +140,20 @@
         
                     <!-- Play/Pause Button -->
                     <button id="playPauseBtn" class="ice-video-play-btn">
-                        <img src="./assets/images/play-icon.svg" alt="icon" class="play-icon" style="display: inline;">
-                        <img src="./assets/images/pause-icon.svg" alt="icon" class="pause-icon" style="display: none;">
+                        <img src="./assets/images/play-icon.svg" alt="icon" class="play-icon" style="display: none;">
+                        <img src="./assets/images/pause-icon.svg" alt="icon" class="pause-icon" style="display: inline;">
                     </button>
         
                     <!-- Mute/Unmute Button -->
                     <button id="muteUnmuteBtn" class="ice-video-mute-btn">
-                        <img src="./assets/images/mute.svg" alt="icon" class="mute-icon" style="display: inline;">
-                        <img src="./assets/images/unmute.svg" alt="icon" class="unmute-icon" style="display: none;">
+                        <img src="./assets/images/mute.svg" alt="icon" class="mute-icon" style="display: none;">
+                        <img src="./assets/images/unmute.svg" alt="icon" class="unmute-icon" style="display: inline;">
                     </button>
         
                     <!-- YouTube iframe with enablejsapi=1 -->
                     <div class="ice-video-video">
                         <iframe id="videoIframe" width="560" height="315"
-                            src="https://www.youtube.com/embed/R7tt65qUk88?loop=1&playlist=R7tt65qUk88&controls=0&modestbranding=1&showinfo=0&rel=0&enablejsapi=1"
+                            src="https://www.youtube.com/embed/R7tt65qUk88?autoplay=1&mute=1&loop=1&playlist=R7tt65qUk88&controls=0&modestbranding=1&showinfo=0&rel=0&enablejsapi=1"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -527,7 +527,7 @@
 
     // Play/Pause Toggle Functionality
     playPauseBtn.addEventListener('click', () => {
-        const command = isPlaying ? 'pauseVideo' : 'playVideo';
+        const command = isPlaying ? 'playVideo' : 'pauseVideo';
         console.log(`Sending command: ${command}`);
         iframe.contentWindow.postMessage(JSON.stringify({
             'event': 'command',
@@ -535,14 +535,14 @@
             'args': []
         }), '*');
 
-        document.querySelector('.play-icon').style.display = isPlaying ? 'inline' : 'none';
-        document.querySelector('.pause-icon').style.display = isPlaying ? 'none' : 'inline';
+        document.querySelector('.play-icon').style.display = isPlaying ? 'none' : 'inline';
+        document.querySelector('.pause-icon').style.display = isPlaying ? 'inline' : 'none';
         isPlaying = !isPlaying;
     });
 
     // Mute/Unmute Toggle Functionality
     muteUnmuteBtn.addEventListener('click', () => {
-        const command = isMuted ? 'unMute' : 'mute';
+        const command = isMuted ? 'mute' : 'unMute';
         console.log(`Sending command: ${command}`);
         iframe.contentWindow.postMessage(JSON.stringify({
             'event': 'command',
@@ -550,8 +550,8 @@
             'args': []
         }), '*');
 
-        document.querySelector('.mute-icon').style.display = isMuted ? 'inline' : 'none';
-        document.querySelector('.unmute-icon').style.display = isMuted ? 'none' : 'inline';
+        document.querySelector('.mute-icon').style.display = isMuted ? 'none' : 'inline';
+        document.querySelector('.unmute-icon').style.display = isMuted ? 'inline' : 'none';
         isMuted = !isMuted;
     });
 </script>
