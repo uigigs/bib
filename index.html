@@ -133,19 +133,28 @@
         <!-- Banner section end -->
 
         <!-- bib-profile video start -->
-        <section class="bib-profile-footer pb-5">
+        <section class="bib-ice-section pb-5">
             <div class="container">
-                <div class="bib-profile-footer-video">
+                <div class="bib-ice-section-video">
                     <img src="./assets/images/profile/footer-video-frame.png" alt="img" class="footer-video-frame">
-                    <div class="play-btn">
-                        
-                    </div>
-                    <div class="profile-footer-video">
-                        <div class="profile-footer-video">
-                            <iframe width="560" height="315" 
-                                src="https://www.youtube.com/embed/R7tt65qUk88?autoplay=1&loop=1&playlist=R7tt65qUk88&modestbranding=1&showinfo=0&rel=0" 
-                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                        </div>
+        
+                    <!-- Play/Pause Button -->
+                    <button id="playPauseBtn" class="ice-video-play-btn">
+                        <img src="./assets/images/play-icon.svg" alt="icon" class="play-icon" style="display: inline;">
+                        <img src="./assets/images/pause-icon.svg" alt="icon" class="pause-icon" style="display: none;">
+                    </button>
+        
+                    <!-- Mute/Unmute Button -->
+                    <button id="muteUnmuteBtn" class="ice-video-mute-btn">
+                        <img src="./assets/images/mute.svg" alt="icon" class="mute-icon" style="display: inline;">
+                        <img src="./assets/images/unmute.svg" alt="icon" class="unmute-icon" style="display: none;">
+                    </button>
+        
+                    <!-- YouTube iframe with enablejsapi=1 -->
+                    <div class="ice-video-video">
+                        <iframe id="videoIframe" width="560" height="315"
+                            src="https://www.youtube.com/embed/R7tt65qUk88?loop=1&playlist=R7tt65qUk88&controls=0&modestbranding=1&showinfo=0&rel=0&enablejsapi=1"
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -506,6 +515,46 @@
             });
         });
     </script>
+
+
+<script>
+    const iframe = document.getElementById('videoIframe');
+    const playPauseBtn = document.getElementById('playPauseBtn');
+    const muteUnmuteBtn = document.getElementById('muteUnmuteBtn');
+
+    let isPlaying = false;
+    let isMuted = false;
+
+    // Play/Pause Toggle Functionality
+    playPauseBtn.addEventListener('click', () => {
+        const command = isPlaying ? 'pauseVideo' : 'playVideo';
+        console.log(`Sending command: ${command}`);
+        iframe.contentWindow.postMessage(JSON.stringify({
+            'event': 'command',
+            'func': command,
+            'args': []
+        }), '*');
+
+        document.querySelector('.play-icon').style.display = isPlaying ? 'inline' : 'none';
+        document.querySelector('.pause-icon').style.display = isPlaying ? 'none' : 'inline';
+        isPlaying = !isPlaying;
+    });
+
+    // Mute/Unmute Toggle Functionality
+    muteUnmuteBtn.addEventListener('click', () => {
+        const command = isMuted ? 'unMute' : 'mute';
+        console.log(`Sending command: ${command}`);
+        iframe.contentWindow.postMessage(JSON.stringify({
+            'event': 'command',
+            'func': command,
+            'args': []
+        }), '*');
+
+        document.querySelector('.mute-icon').style.display = isMuted ? 'inline' : 'none';
+        document.querySelector('.unmute-icon').style.display = isMuted ? 'none' : 'inline';
+        isMuted = !isMuted;
+    });
+</script>
 
 </body>
 
