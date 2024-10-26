@@ -461,6 +461,53 @@ ul {
   margin-top: 0px;
 }
 
+/* Preloader Styling */
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: linear-gradient(180deg, #4A6CDA 0%, #4A6CDA 100%);
+  animation: loaderAnimetion 5s ease-in-out forwards;
+}
+
+.preloader img {
+  height: 130px;
+  width: 130px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Keyframes for fade-out and pulse effect */
+@keyframes loaderAnimetion {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  80% {
+    visibility: visible;
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -100vh;
+    z-index: 0;
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
 .profile-body-container {
   overflow-x: hidden;
 }
