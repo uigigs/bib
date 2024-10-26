@@ -474,7 +474,7 @@ ul {
   left: 0;
   z-index: 9999;
   background: linear-gradient(180deg, #4A6CDA 0%, #4A6CDA 100%);
-  animation: loaderAnimetion 5s ease-in-out forwards;
+  animation: loaderAnimetion 3s ease-in-out forwards;
 }
 
 .preloader img {
