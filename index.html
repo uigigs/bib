@@ -7,6 +7,7 @@
     <title>BIB - Home</title>
     <link rel="shortcut icon" href="./assets/images/profile/profile-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/animate.compat.css" />
@@ -15,9 +16,9 @@
 <body>
     <div class="body-container">
         <!-- Preloader -->
-        <div class="preloader">
+        <!-- <div class="preloader">
             <img src="./assets/images/profile/profile-logo.png" alt="Loading...">
-        </div>
+        </div> -->
         <!-- header section start -->
         <header class="header-section header-2">
             <div class="container">
@@ -88,18 +89,17 @@
         </section>
 
         <!-- join bib section start -->
-        <section class="join-bib-section mb-0 pb-0" id="JoinUs">
+        <section class="join-bib-section fade-up-section mb-0 pb-0" id="JoinUs">
             <img src="./assets/images/roket-bib.png" alt="img" class="rocket-img join-rocket-img">
             <div class="container">
                 <img src="./assets/images/balls1.png" alt="img" class="shape">
-                <h2 class="section-title uppercase text-center title-shadow wow fadeInUp" data-wow-duration="0.5s"
-                    data-wow-delay="0.5s">Join the BIB Family</h2>
-                <div class="bib-social pt-4 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <h2 class="section-title uppercase text-center title-shadow">Join the BIB Family</h2>
+                <div class="bib-social pt-4">
                     <ul>
-                        <li><a href="https://t.me/BearInBathrobe" target="_blank"><img src="./assets/images/social1.png" alt="icon"></a></li>
-                        <li><a href="https://x.com/bearinbathrobe" target="_blank"><img src="./assets/images/social2.png" alt="icon"></a></li>
-                        <li><a href="#" target="_blank"><img src="./assets/images/social3.png" alt="icon"></a></li>
-                        <li><a href="#" target="_blank"><img src="./assets/images/social4.png" alt="icon"></a></li>
+                        <li><a href="#"><img src="./assets/images/social1.png" alt="icon"></a></li>
+                        <li><a href="#"><img src="./assets/images/social2.png" alt="icon"></a></li>
+                        <li><a href="#"><img src="./assets/images/social3.png" alt="icon"></a></li>
+                        <li><a href="#"><img src="./assets/images/social4.png" alt="icon"></a></li>
                     </ul>
                 </div>
             </div>
@@ -111,8 +111,8 @@
             <img src="./assets/images/cloud1.png" alt="shape" class="cloud-1 bannerCloud1">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="banner-left wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                    <div class="col-md-6 fade-left">
+                        <div class="banner-left">
                             <h3 class="title-shadow">The dream of every bear:</h3>
                             <h3 class="mb-30 title-shadow">women, money, and a bathrobe. </h3>
                             <p>BIB has made a fortune during the Solana Summer. Follow his lifestyle and join the BIB
@@ -121,8 +121,8 @@
                                 sometimes</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="banner-right wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="0.4s">
+                    <div class="col-md-6 fade-right">
+                        <div class="banner-right">
                             <div class="banner-img">
                                 <img src="./assets/images/bib_waving.gif" alt="img">
                                 <img src="./assets/images/clouds/banner-img-cloud.png" alt="cloud"
@@ -131,9 +131,9 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
+        
         <!-- Banner section end -->
 
         <!-- bib-profile video start -->
@@ -144,8 +144,10 @@
         
                     <!-- Play/Pause Button -->
                     <button id="playPauseBtn" class="ice-video-play-btn">
-                        <img src="./assets/images/play-icon.svg" alt="icon" class="play-icon" style="display: none;">
-                        <img src="./assets/images/pause-icon.svg" alt="icon" class="pause-icon" style="display: inline;">
+                        <div class="play-btn">
+                            <img src="./assets/images/play-icon.svg" alt="icon" class="play-icon" style="display: inline;">
+                            <img src="./assets/images/pause-icon.svg" alt="icon" class="pause-icon" style="display: none;">
+                        </div>
                     </button>
         
                     <!-- Mute/Unmute Button -->
@@ -157,7 +159,7 @@
                     <!-- YouTube iframe with enablejsapi=1 -->
                     <div class="ice-video-video">
                         <iframe id="videoIframe" width="560" height="315"
-                            src="https://www.youtube.com/embed/R7tt65qUk88?autoplay=1&mute=1&loop=1&playlist=R7tt65qUk88&controls=0&modestbranding=1&showinfo=0&rel=0&enablejsapi=1"
+                            src="https://www.youtube.com/embed/R7tt65qUk88?autoplay=0&mute=1&loop=1&playlist=R7tt65qUk88&controls=0&modestbranding=1&showinfo=0&rel=0&enablejsapi=1"
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -498,8 +500,11 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- wow js -->
-    <script src="./assets/js/wow.min.js"></script>
+    <!-- <script src="./assets/js/wow.min.js"></script> -->
     <script src="./assets/js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <!--team popup js -->
     <script>
         $(document).ready(function () {
@@ -527,27 +532,52 @@
     const muteUnmuteBtn = document.getElementById('muteUnmuteBtn');
 
     let isPlaying = false;
-    let isMuted = false;
+    let isMuted = true;
 
     // Play/Pause Toggle Functionality
     playPauseBtn.addEventListener('click', () => {
+        isPlaying = !isPlaying;
         const command = isPlaying ? 'playVideo' : 'pauseVideo';
-        console.log(`Sending command: ${command}`);
+        // console.log(`Sending command: ${command}`);
         iframe.contentWindow.postMessage(JSON.stringify({
             'event': 'command',
             'func': command,
             'args': []
         }), '*');
 
+        document.querySelector('.play-btn').style.display = isPlaying ? 'none' : 'flex';
         document.querySelector('.play-icon').style.display = isPlaying ? 'none' : 'inline';
         document.querySelector('.pause-icon').style.display = isPlaying ? 'inline' : 'none';
-        isPlaying = !isPlaying;
+
+        if (isPlaying) {
+            isMuted = false;
+            iframe.contentWindow.postMessage(JSON.stringify({
+                'event': 'command',
+                'func': 'unMute',
+                'args': []
+            }), '*');
+
+            document.querySelector('.mute-icon').style.display =  'inline' ;
+            document.querySelector('.unmute-icon').style.display = 'none' ;
+        }else{
+            isMuted = true;
+            iframe.contentWindow.postMessage(JSON.stringify({
+                'event': 'command',
+                'func': 'mute',
+                'args': []
+            }), '*');
+
+            document.querySelector('.mute-icon').style.display =  'none' ;
+            document.querySelector('.unmute-icon').style.display = 'inline' ;
+        }
+   
     });
 
     // Mute/Unmute Toggle Functionality
     muteUnmuteBtn.addEventListener('click', () => {
+        isMuted = !isMuted;
         const command = isMuted ? 'mute' : 'unMute';
-        console.log(`Sending command: ${command}`);
+        // console.log(`Sending command: ${command}`);
         iframe.contentWindow.postMessage(JSON.stringify({
             'event': 'command',
             'func': command,
@@ -556,9 +586,79 @@
 
         document.querySelector('.mute-icon').style.display = isMuted ? 'none' : 'inline';
         document.querySelector('.unmute-icon').style.display = isMuted ? 'inline' : 'none';
-        isMuted = !isMuted;
     });
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const section = document.querySelector(".fade-up-section");
+  
+      // Create Intersection Observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Trigger Anime.js animation when the section is in view
+            anime({
+              targets: section,
+              translateY: [100, 0],
+              opacity: [0, 1],
+              duration: 1500,
+              easing: 'easeOutExpo'
+            });
+            // Stop observing after the animation is triggered once
+            observer.unobserve(section);
+          }
+        });
+      }, {
+        threshold: 0.1 // Trigger when 10% of the section is in view
+      });
+  
+      observer.observe(section);
+    });
+  </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const fadeLeft = document.querySelector(".fade-left");
+      const fadeRight = document.querySelector(".fade-right");
+  
+      // Create Intersection Observer
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Fade Left Animation
+            anime({
+              targets: fadeLeft,
+              translateX: [-100, 0],
+              opacity: [0, 1],
+              duration: 1500,
+              easing: 'easeOutExpo'
+            });
+  
+            // Fade Right Animation
+            anime({
+              targets: fadeRight,
+              translateX: [100, 0],
+              opacity: [0, 1],
+              duration: 1500,
+              easing: 'easeOutExpo'
+            });
+  
+            // Stop observing after animation is triggered
+            observer.unobserve(fadeLeft);
+            observer.unobserve(fadeRight);
+          }
+        });
+      }, {
+        threshold: 0.1 // Trigger when 10% of the section is in view
+      });
+  
+      // Observe elements
+      observer.observe(fadeLeft);
+      observer.observe(fadeRight);
+    });
+  </script>
+  
 
 </body>
 
