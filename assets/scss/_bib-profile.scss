@@ -11,9 +11,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 99999;
   background: linear-gradient(180deg, #4a6cda 0%, #4a6cda 100%);
-  // animation: loaderAnimetion 4s ease-in-out forwards;
+  animation: loaderAnimetion 2s ease-in-out forwards;
 
   img {
     height: 130px;
