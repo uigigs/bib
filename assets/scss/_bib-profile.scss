@@ -62,7 +62,7 @@
   background-image: url(../images/profile/front-bg.webp);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 100% 100%;
   padding: 15% 2% 20% 2%;
   h2{
     color: #FFF;
@@ -86,14 +86,16 @@
     padding: 3px;
     position: relative;
     overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.5);
+    
    &::before {
       content: '';
       position: absolute;
       inset: -25%;
       aspect-ratio: 1;
       margin: auto;
-      background-image: linear-gradient(90deg, transparent 35%, hwb(0 100% 0% / 60%) 50%, transparent 65%);
-      background-color: #7EBEFE; /* Solid color fallback */
+      background-image: linear-gradient(90deg, transparent 35%, rgba(255, 255, 255, 0.74) 50%, transparent 65%);
+      background-color: #7EBEFE;
       z-index: 1;
       animation: rotate 3s linear infinite;
     }

@@ -98,8 +98,24 @@
     font-size: 32px;
     max-width: 300px;
   }
+  .front-page-content {
+    padding: 20% 2%;
+  }
+  .front-page-content h2 {
+    font-size: 27px;
+    margin-top: 2.5%;
+    margin-bottom: 3%;
+  }
+  .front-page-content .ready-btn button {
+    max-width: 340px;
+    font-size: 27px;
+  }
 }
 @media only screen and (max-width: 992px) {
+  .front-page .logo2 {
+    height: 80px;
+    width: 80px;
+  }
   .header-inner .logo {
     width: 60px;
   }
@@ -166,6 +182,21 @@
   .body-container {
     max-height: 100vh;
     overflow-y: scroll !important;
+  }
+  .front-page-content {
+    padding: 25% 2% 30% 2%;
+  }
+  .front-page-content .ready-btn {
+    border-radius: 12px;
+    max-width: 300px;
+  }
+  .front-page-content .ready-btn::after {
+    border-radius: 12px;
+  }
+  .front-page-content .ready-btn button {
+    font-size: 24px;
+    padding: 11px 18px;
+    border-radius: 12px;
   }
   .header-2 .header-inner {
     padding: 4px 20px;
@@ -309,6 +340,29 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  .front-page .logo2 {
+    height: 70px;
+    width: 70px;
+  }
+  .front-page-content {
+    padding: 25% 17% 30% 17%;
+  }
+  .front-page-content h2 {
+    font-size: 20px;
+    line-height: 125%;
+  }
+  .front-page-content .ready-btn {
+    border-radius: 10px;
+    max-width: 240px;
+  }
+  .front-page-content .ready-btn::after {
+    border-radius: 10px;
+  }
+  .front-page-content .ready-btn button {
+    padding: 7px 13px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
   .banner-left h3 {
     font-size: 30px;
   }
