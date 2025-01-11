@@ -309,7 +309,7 @@ toggleWowClass();
 // Run on window resize
 window.addEventListener('resize', toggleWowClass);
 
-// new WOW().init();
+new WOW().init();
 
 
 })(jQuery);

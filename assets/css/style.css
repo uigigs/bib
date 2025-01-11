@@ -474,13 +474,117 @@ ul {
   left: 0;
   z-index: 9999;
   background: linear-gradient(180deg, #4a6cda 0%, #4a6cda 100%);
-  animation: loaderAnimetion 4s ease-in-out forwards;
 }
-
 .preloader img {
   height: 130px;
   width: 130px;
   animation: pulse 1.5s infinite ease-in-out;
+}
+
+.front-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: opacity 1s ease, visibility 1s ease;
+  opacity: 1;
+  visibility: visible;
+  background: linear-gradient(180deg, #4a6cda 0%, #4a6cda 100%);
+}
+.front-page.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+.front-page .logo2 {
+  height: 130px;
+  width: 130px;
+  margin: auto;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+.front-page .container {
+  position: relative;
+}
+
+.front-page-content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  background-image: url(../images/profile/front-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 15% 2% 20% 2%;
+}
+.front-page-content h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Concert One";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 112.5% */
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
+  max-width: 331px;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+.front-page-content .ready-btn {
+  border-radius: 20px;
+  max-width: 420px;
+  margin: auto;
+  padding: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.front-page-content .ready-btn::before {
+  content: "";
+  position: absolute;
+  inset: -25%;
+  aspect-ratio: 1;
+  margin: auto;
+  background-image: linear-gradient(90deg, transparent 35%, hwb(0 100% 0%/60%) 50%, transparent 65%);
+  background-color: #7EBEFE; /* Solid color fallback */
+  z-index: 1;
+  animation: rotate 3s linear infinite;
+}
+.front-page-content .ready-btn::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background-color: #7EBEFE;
+  z-index: 0;
+  border-radius: 12px;
+}
+.front-page-content .ready-btn button {
+  border-radius: 20px;
+  border: 3px solid #FFF;
+  background-color: #7EBEFE;
+  z-index: 11;
+  position: relative;
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  padding: 18px 32px;
+  color: #FFF;
+  text-align: center;
+  font-family: "Concert One";
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 112.5%;
+  letter-spacing: -0.64px;
+  text-transform: uppercase;
 }
 
 /* Keyframes for fade-out and pulse effect */
@@ -498,6 +602,11 @@ ul {
     top: -100vh;
     z-index: 0;
     opacity: 0;
+  }
+}
+@keyframes rotate {
+  to {
+    rotate: 360deg;
   }
 }
 @keyframes pulse {
