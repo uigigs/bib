@@ -186,6 +186,9 @@
   .front-page-content {
     padding: 25% 2% 30% 2%;
   }
+  .front-page-content h2 {
+    max-width: 331px;
+  }
   .front-page-content .ready-btn {
     border-radius: 12px;
     max-width: 300px;
