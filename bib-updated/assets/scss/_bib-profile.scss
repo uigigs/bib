@@ -363,7 +363,11 @@
 .create-own-profile-pic {
   padding-bottom: 78px;
   position: relative;
-
+  h4{
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
   .coin1 {
     width: 7%;
     position: absolute;
@@ -824,6 +828,48 @@
   text-shadow: none;
 }
 
+.bib-ca{
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 15px 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  max-width: 800px;
+  padding-right: 90px;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: max-content;
+  }
+  p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  .copy-btn{
+    position: absolute;
+    cursor: pointer;
+    top: 18px;
+    right: 30px;
+  }
+  .copied-msg{
+    margin-left: auto;
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 20px;
+    font-size: 16px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .custom-container {
     max-width: 1440px !important;
@@ -1034,6 +1080,18 @@
   .ice-video-play-btn {
     width: calc(100% - 140px);
     height: calc(100% - 130px);
+  }
+
+  .bib-ca{
+    font-size: 16px;
+    padding: 15px;
+    padding-right: 80px;
+    .copy-btn{
+      top: 15px;
+    }
+    .copied-msg{
+      font-size: 14px;
+    }
   }
 }
 

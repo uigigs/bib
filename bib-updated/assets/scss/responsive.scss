@@ -61,8 +61,17 @@
         }
     }
 
-    .coin-bib-img {
-        max-width: 350px;
+    .crypto-cuties-section{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        position: relative;
+        .coin-bib-img{
+            position: absolute;
+            top: -10%;
+            right: -10%;
+            opacity: 0.5;
+            width: 30%;
+        }
     }
 
     .ship-section {
@@ -261,6 +270,17 @@
         }
     }
 
+    .meme-section,
+    .bib-ai-section{
+        .meme-right,
+        .bib-ai-left{
+            ul{
+                li{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
     
 }
 
@@ -268,12 +288,10 @@
     body {
         overflow: hidden;
     }
-
     .body-container {
         max-height: 100vh;
         overflow-y: scroll !important;
     }
-
     .front-page-content {
         padding: 25% 2% 30% 2%;
         h2{
@@ -292,7 +310,6 @@
             }
         }
     }
-
     .header-2 {
         .header-inner {
             padding: 4px 20px;
@@ -306,7 +323,6 @@
             }
         }
     }
-
     .section-title{
         font-size: 34px;
     }
@@ -322,16 +338,13 @@
             display: none;
         }
     }
-
     .join-bib-section {
         padding: 80px 0px;
         margin-bottom: 0px;
     }
-
     .coming-soon-section {
         padding-bottom: 30px;
     }
-
     .bib-walk-section {
         padding-bottom: 60px;
         padding-top: 20px;
@@ -340,7 +353,6 @@
             bottom: -7%;
         }
     }
-
     .banner-left {
         text-align: center;
         padding-bottom: 40px;
@@ -360,16 +372,13 @@
             }
         }
     }
-
     .banner-img {
         max-width: 400px;
         margin: auto;
     }
-
     .coming-soon-section {
         padding-bottom: 0px;
     }
-
     .coming-soon-content {
         text-align: center;
         justify-content: center;
@@ -379,7 +388,6 @@
             font-size: 40px;
         }
     }
-
     .crypto-cuties-section {
         padding-top: 30px;
 
@@ -407,19 +415,16 @@
             }
         }
     }
-
     .bib-walk-section {
 
         .cloud4 {
             bottom: -5%;
         }
     }
-
     .bib-walk-img {
         max-width: 400px;
         margin: auto;
     }
-
     .bib-walk-text {
         padding: 40px 0px;
 
@@ -429,20 +434,18 @@
             margin-top: 30px;
         }
     }
-
     .footer-social {
         padding: 0px 30px;
 
         .bib-social {
             margin-top: -10px;
+
         }
     }
-
     .footer-social .footer-social-title {
         transform: translateX(0px);
         padding: 20px 25px;
     }
-
     .bib-walk-text {
         padding-left: 0;
         height: 80%;
@@ -457,11 +460,13 @@
             margin-top: 30px;
         }
     }
-
     .bib-social{
         margin-top: 20px;
+        
+        ul{
+            gap: 10px;
+        }
     }
-
     .ship-section {
         .ship-text {
             max-width: 340px;
@@ -471,6 +476,24 @@
             h3{
                 font-size: 24px;
                 max-width: 218px;
+            }
+        }
+    }
+    .meme-section,
+    .bib-ai-section{
+        .meme-left,
+        .bib-ai-right{
+            padding: 30px 0px;
+            .banner-img{
+                margin: auto;
+            }
+        }
+        .meme-right,
+        .bib-ai-left{
+            ul{
+                li{
+                    justify-content: flex-start;
+                }
             }
         }
     }
