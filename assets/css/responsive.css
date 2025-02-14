@@ -376,6 +376,7 @@
   .bib-ai-section .meme-right ul li,
   .bib-ai-section .bib-ai-left ul li {
     justify-content: flex-start;
+    padding-left: 35px;
   }
 }
 @media only screen and (max-width: 575px) {
